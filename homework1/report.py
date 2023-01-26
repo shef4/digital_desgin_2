@@ -3,8 +3,16 @@ Verification of 8, 16, & 32-bit Multiplier Report
 
 Introduction
 multiplier module's interface 
+The multiplier module's interface uses a variable  N-bit inputs a and b  & output product which is a 2N-bit values allowing it to 
+be do for 8,16,and 32 bit multiplication with the same function and handle overflow. The input values for the module are 
+clk, reset_n, start, a, and b. The output values are product, and busy. The clk input is used for the storing 
+clock signal. reset_n input is the resets the module values. The start input is the start 
+signal for when to start the multiplcation process.busy is used to track when the multiple process is complete.
+These inputs and outputs are 1-bit values. The a and b inputs are the values to be multiplied. 
+These inputs are N-bit values. The product output is the result of the multiplication.
 Inputs: clk, reset_n, start, a, b
 Outputs: product, busy
+
 
 Implementation 
 there are 3 different methods of implementation, each with its own set 
@@ -21,7 +29,6 @@ added to the upper half of the product and then set as the new product with an
 extra space for carry over. Esentially it uses the upper N bits of the product 
 to store the result and shifting right to provide space for carry over 
 during addition.
-
 
 8-bit multiplier testing
 summarize the testing strategy 
@@ -56,14 +63,16 @@ written using nested for loops and urandom() which provided a random 32-bit
 value for variable a and b. The testbench also checks for the correct output
 and busy signal. 
 
-number and type of tests applied
+Number and type of tests applied
 for the 32-bit multiplier 10000 unit tests were applied. The tests were done
 using assert statements in the testbench. When the assert statement is false
 the testbench prints out the values of a, b, product, and busy.
 
 Results
-the results from testing were unsuccesful. While I was able to assign all 
+The results from testing were unsuccesful. While I was able to assign all 
 values using my testbench module, I was unable to get the correct product
-value. It seems as though the changes to the input value for the multipleir had no effect on the product value provided by the model. I was unable to figure out why this was happening.
+value. It seems as though the changes to the input value for the multipleir
+had no effect on the product value provided by the model. Unfortunatly I was unable to 
+figure out why this was happening.
 
 """
