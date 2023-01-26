@@ -30,52 +30,64 @@ module mult_tb;
       #10;
 
       $display("Start 8-bit Test ...");
-      for (a = 0; a < 2**(N/2); a = a + 1) begin
-         for (b = 0; b < 2**(N/2); b = b + 1) begin
-            start = 1;
-            #10;
-            start = 0;
-            #10;
-            assert (product == (a*b)) 
+      for (int i = 0; i < 2**(N/2); i = i + 1) begin
+         for (int j = 0; j < 2**(N/2); j = j + 1) begin
+            a = i;
+            b = j;
+            #100;
+            assert (product == (i*j)) 
             else $display(" %d * %d = %d, but product = %d", a, b, a * b, product);
-            #10;
+            start = 0;
+            #200;
+            start = 1;
+            #1000;
          end
       end
       $display("8-bit Test passed");
 
+      reset_n = 0;
+      start = 0;
+      a = 0;
+      b = 0;
       #10;
       reset_n = 1;
       #10;
 
       $display("Start 16-bit Test ...");
-      for (a = 0; a < 2**N; a = a + 1) begin
-         for (b = 0; b < 2**N; b = b + 1) begin
-            start = 1;
-            #10;
-            start = 0;
-            #10;
-            assert (product == (a*b)) 
+      for (int i = 0; i < 2**(N); i = i + 1) begin
+         for (int j = 0; j < 2**(N); j = j + 1) begin
+            a = i;
+            b = j;
+            #100;
+            assert (product == (i*j)) 
             else $display(" %d * %d = %d, but product = %d", a, b, a * b, product);
-            #10;
+            start = 0;
+            #200;
+            start = 1;
+            #1000;
          end
       end
       $display("16-bit Test passed");
 
+      reset_n = 0;
+      start = 0;
+      a = 0;
+      b = 0;
       #10;
       reset_n = 1;
       #10;
 
       $display("Start 32-bit Test ...");
-      for (int i = 0; i < 100; i = i + 1) begin
+      for (int i = 0; i < 10000; i = i + 1) begin
          a = $urandom;
          b = $urandom;
-         start = 1;
-         #10;
-         start = 0;
-         #10;
+         #100;
          assert (product == (a*b)) 
          else $display(" %d * %d = %d, but product = %d", a, b, a * b, product);
-         #10;
+         start = 0;
+         #200;
+         start = 1;
+         #1000;
       end
       $display("32-bit Test passed");
 
@@ -83,3 +95,5 @@ module mult_tb;
       $finish;
    end
    endmodule
+
+
