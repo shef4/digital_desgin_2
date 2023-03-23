@@ -1,0 +1,425 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/simulation/modelsim
+vbutton
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1677809847
+!i10b 1
+!s100 0Jo@K=^jMZ@><HAfoHJi_2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I?OT<o6JZ3_AX0_E>=9kWT2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1677567305
+Z6 8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv
+Z7 FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv
+!i122 8
+L0 1 12
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1677809847.000000
+Z10 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project
+Z14 tCvgOpt 0
+vbutton_tb
+R1
+R2
+!i10b 1
+!s100 m8Z?i0hd8h:L@KO2dg<OZ0
+R3
+IMIm4^PN07;oMiBdD96:hj2
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 8
+L0 62 24
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vclock_doubler
+Z15 !s110 1677809846
+!i10b 1
+!s100 gAEjL:5Xc`O2581OXaRK11
+R3
+IWe93P1cSm45`fXP=i7a8L3
+R4
+R0
+w1677809048
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo
+!i122 0
+L0 32 264
+R8
+r1
+!s85 0
+31
+Z16 !s108 1677809846.000000
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo|
+!s90 -reportprogress|300|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo|
+!i113 1
+R14
+vcompare
+R1
+R2
+!i10b 1
+!s100 `O41mUim@WN<7b;Wi[>kA3
+R3
+IUNNN;LFH3U[ca5N@jZl^W0
+R4
+S1
+R0
+Z17 w1677207913
+Z18 8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv
+Z19 FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv
+!i122 7
+L0 1 17
+R8
+r1
+!s85 0
+31
+R9
+Z20 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv|
+!i113 1
+R12
+R13
+R14
+vcompare_tb
+R1
+R2
+!i10b 1
+!s100 L[Ae>of0S:f8UomZTMJZR1
+R3
+ITFcYOXXcTV;MccAh5feSL1
+R4
+S1
+R0
+R17
+R18
+R19
+!i122 7
+L0 20 34
+R8
+r1
+!s85 0
+31
+R9
+R20
+R21
+!i113 1
+R12
+R13
+R14
+vcontrol
+R1
+R15
+!i10b 1
+!s100 K2L_UggH]YbLAn?CciJ2@0
+R3
+I<A6ILm;g4kanfQ99<WRjV2
+R4
+S1
+R0
+w1677799914
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv
+!i122 3
+L0 1 108
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv|
+!i113 1
+R12
+R13
+R14
+vcounter
+R1
+!s110 1677809848
+!i10b 1
+!s100 RzM[N`NdA8=oaiVz]6[351
+R3
+IDJ2N6Rz2H`4:zQHPmC^8b3
+R4
+S1
+R0
+w1677799999
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv
+!i122 9
+L0 1 28
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv|
+!i113 1
+R12
+R13
+R14
+vDebounce
+R1
+R2
+!i10b 1
+!s100 N]ho5KO2ih]KgPR_AE<zj2
+R3
+IlZR2e?7[^<Yn8lSl:3Dh;3
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 8
+L0 14 27
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@debounce
+vgold_mult
+R1
+R2
+!i10b 1
+!s100 h^]1]W82oN8D^nj8gGOdo0
+R3
+I0STAFDg1kHA5`:^HnLjMg1
+R4
+S1
+R0
+w1677114765
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv
+!i122 6
+L0 1 11
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv|
+!i113 1
+R12
+R13
+R14
+vmult16_tester
+R1
+R2
+!i10b 1
+!s100 3Gddj<X3mMA]i^GGzXzDT0
+R3
+IZWj7NOmaT9QB5X`_]7_L12
+R4
+S1
+R0
+Z22 w1677809637
+Z23 8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv
+Z24 FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv
+!i122 4
+L0 1 230
+R8
+r1
+!s85 0
+31
+R16
+Z25 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv|
+!i113 1
+R12
+R13
+R14
+vmult16_tester_tb
+R1
+R2
+!i10b 1
+!s100 dWzA7LD>gNRg?2Jo=9fLC2
+R3
+I6e]dAbHcT71]X:Xioj8Sa2
+R4
+S1
+R0
+R22
+R23
+R24
+!i122 4
+L0 233 35
+R8
+r1
+!s85 0
+31
+R16
+R25
+R26
+!i113 1
+R12
+R13
+R14
+vprogress
+R1
+R15
+!i10b 1
+!s100 ERn394^=o]LU1a=UNTmn23
+R3
+IiJSI9N6A>C;RH1:T<QUSD3
+R4
+S1
+R0
+w1677635754
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv
+!i122 1
+L0 5 41
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv|
+!i113 1
+R12
+R13
+R14
+vseg_disp
+R1
+R15
+!i10b 1
+!s100 z=ZY9??7YK>>[P^AXnCIZ3
+R3
+Ib3@Y22ObzAE6nkGDjR;NX3
+R4
+S1
+R0
+Z27 w1677614958
+Z28 8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv
+Z29 FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv
+!i122 2
+L0 1 52
+R8
+r1
+!s85 0
+31
+R16
+Z30 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv|
+Z31 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv|
+!i113 1
+R12
+R13
+R14
+vSync
+R1
+R2
+!i10b 1
+!s100 DBcW7XVS]@OA<NJh9a=cc1
+R3
+I3N984:2`?^N^KKS1JPKQR2
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 8
+L0 42 19
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@sync
+vtb_seg_disp
+R1
+R15
+!i10b 1
+!s100 0QT0P<MT>5PXYik4mYi=A1
+R3
+IaOnSibO;c3YHIb[WEHR`=2
+R4
+S1
+R0
+R27
+R28
+R29
+!i122 2
+L0 54 45
+R8
+r1
+!s85 0
+31
+R16
+R30
+R31
+!i113 1
+R12
+R13
+R14
+vtest_mult
+R1
+R2
+!i10b 1
+!s100 @Wl61Y]0KEgdTlMjEd2Ha0
+R3
+I7gZ?@m3WjDf1^^8J]M^g00
+R4
+S1
+R0
+w1677207735
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv
+!i122 5
+L0 1 47
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project|C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv|
+!i113 1
+R12
+R13
+R14

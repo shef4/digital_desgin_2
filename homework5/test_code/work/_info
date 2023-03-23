@@ -1,0 +1,211 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vbutton
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1677185627
+!i10b 1
+!s100 ckbhH9>CUJM5UzaU6ko=;2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUC_D:z1>FboX[?N2QDDLX2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code
+w1677113333
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/button.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/button.sv
+!i122 21
+L0 1 87
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1677185627.000000
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/button.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/button.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vcompare
+R0
+R1
+!i10b 1
+!s100 CbgFU<imkVAQKWiEd[o_Z2
+R2
+I>1oDk21=MRP7`nYa?WX]Q2
+R3
+S1
+R4
+w1677114808
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/compare.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/compare.sv
+!i122 22
+L0 1 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/compare.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/compare.sv|
+!i113 1
+R7
+R8
+vgold_mult
+R0
+R1
+!i10b 1
+!s100 h^]1]W82oN8D^nj8gGOdo0
+R2
+IP1G`RkH9A1k0`DaQ[ZLIM0
+R3
+S1
+R4
+w1677114765
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/gold_mult.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/gold_mult.sv
+!i122 23
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/gold_mult.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/gold_mult.sv|
+!i113 1
+R7
+R8
+vmult16_tester
+R0
+Z9 !s110 1677185628
+!i10b 1
+!s100 Zlf<8Z7<Al7ce3g?n>Mg^0
+R2
+I56:A`Q3ei8SFo;JEQRP622
+R3
+S1
+R4
+Z10 w1677118184
+Z11 8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/mult16_tester.sv
+Z12 FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/mult16_tester.sv
+!i122 24
+L0 3 85
+R5
+r1
+!s85 0
+31
+Z13 !s108 1677185628.000000
+Z14 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/mult16_tester.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/mult16_tester.sv|
+!i113 1
+R7
+R8
+vmult16_tester_tb
+R0
+R9
+!i10b 1
+!s100 =03dcZKDVIVhl<`=Pn[:Y3
+R2
+IZ^A07<mBPFzazSABHPGi70
+R3
+S1
+R4
+R10
+R11
+R12
+!i122 24
+L0 89 44
+R5
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R7
+R8
+vseg_disp
+R0
+Z16 !s110 1677185629
+!i10b 1
+!s100 KlLZ2:0RZZT>jRoQa4e;z2
+R2
+I;`55U>XmKa;:]_Sfkl2WQ0
+R3
+S1
+R4
+w1677119368
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/seg_disp.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/seg_disp.sv
+!i122 25
+L0 1 61
+R5
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/seg_disp.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/seg_disp.sv|
+!i113 1
+R7
+R8
+vstatus
+R0
+R16
+!i10b 1
+!s100 JjE>i@6ZVV7^ZLm951[n>3
+R2
+IYWYH4KZD:jLIHUCe_G4KS0
+R3
+S1
+R4
+w1677118542
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/status.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/status.sv
+!i122 26
+L0 1 103
+R5
+r1
+!s85 0
+31
+Z17 !s108 1677185629.000000
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/status.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/status.sv|
+!i113 1
+R7
+R8
+vtest_mult
+R0
+R16
+!i10b 1
+!s100 4>TST8]lAfIV@F6M6ZUGo0
+R2
+In9DSD4ZT1cS`2QT[h:Xm51
+R3
+S1
+R4
+w1677083095
+8C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/test_mult.sv
+FC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/test_mult.sv
+!i122 27
+L0 1 46
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/test_mult.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework5/test_code/test_mult.sv|
+!i113 1
+R7
+R8

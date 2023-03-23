@@ -1,0 +1,921 @@
+Analysis & Synthesis report for mult16_tester
+Thu Mar 02 22:22:53 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |mult16_tester
+ 14. Parameter Settings for User Entity Instance: clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i
+ 15. Parameter Settings for User Entity Instance: button:start_debounce|Sync:Sync_Inst
+ 16. Parameter Settings for User Entity Instance: button:start_debounce|Debounce:Debounce_Inst
+ 17. Parameter Settings for User Entity Instance: button:error_debounce|Sync:Sync_Inst
+ 18. Parameter Settings for User Entity Instance: button:error_debounce|Debounce:Debounce_Inst
+ 19. Parameter Settings for User Entity Instance: control:control_inst
+ 20. Parameter Settings for User Entity Instance: progress:progress_inst|counter:counter_inst
+ 21. Parameter Settings for User Entity Instance: test_mult:test_mult_inst
+ 22. Parameter Settings for User Entity Instance: seg_disp:seg_disp_A
+ 23. Parameter Settings for User Entity Instance: seg_disp:seg_disp_B
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Mar 02 22:22:53 2023       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; mult16_tester                               ;
+; Top-level Entity Name           ; mult16_tester                               ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 197                                         ;
+; Total pins                      ; 46                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 1                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; mult16_tester      ; mult16_tester      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ; Library       ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+; progress.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv                        ;               ;
+; seg_disp.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv                        ;               ;
+; control.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv                         ;               ;
+; mult16_tester.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv                   ;               ;
+; test_mult.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv                       ;               ;
+; gold_mult.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv                       ;               ;
+; compare.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv                         ;               ;
+; button.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv                          ;               ;
+; counter.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv                         ;               ;
+; clock_doubler.v                    ; yes             ; User Wizard-Generated File   ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler.v                    ; clock_doubler ;
+; clock_doubler/clock_doubler_0002.v ; yes             ; User Verilog HDL File        ; C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler/clock_doubler_0002.v ; clock_doubler ;
+; altera_pll.v                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                ;               ;
++------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                 ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                         ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 124                                                                                                           ;
+;                                             ;                                                                                                               ;
+; Combinational ALUT usage for logic          ; 145                                                                                                           ;
+;     -- 7 input functions                    ; 1                                                                                                             ;
+;     -- 6 input functions                    ; 13                                                                                                            ;
+;     -- 5 input functions                    ; 27                                                                                                            ;
+;     -- 4 input functions                    ; 34                                                                                                            ;
+;     -- <=3 input functions                  ; 70                                                                                                            ;
+;                                             ;                                                                                                               ;
+; Dedicated logic registers                   ; 197                                                                                                           ;
+;                                             ;                                                                                                               ;
+; I/O pins                                    ; 46                                                                                                            ;
+;                                             ;                                                                                                               ;
+; Total DSP Blocks                            ; 1                                                                                                             ;
+;                                             ;                                                                                                               ;
+; Total PLLs                                  ; 1                                                                                                             ;
+;     -- PLLs                                 ; 1                                                                                                             ;
+;                                             ;                                                                                                               ;
+; Maximum fan-out node                        ; clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
+; Maximum fan-out                             ; 196                                                                                                           ;
+; Total fan-out                               ; 1361                                                                                                          ;
+; Average fan-out                             ; 3.12                                                                                                          ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                         ;
++-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------------+---------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                           ; Entity Name        ; Library Name  ;
++-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------------+---------------+
+; |mult16_tester                                ; 145 (44)            ; 197 (6)                   ; 0                 ; 1          ; 46   ; 0            ; |mult16_tester                                                                                                ; mult16_tester      ; work          ;
+;    |button:error_debounce|                    ; 4 (0)               ; 6 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:error_debounce                                                                          ; button             ; work          ;
+;       |Debounce:Debounce_Inst|                ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:error_debounce|Debounce:Debounce_Inst                                                   ; Debounce           ; work          ;
+;       |Sync:Sync_Inst|                        ; 1 (1)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:error_debounce|Sync:Sync_Inst                                                           ; Sync               ; work          ;
+;    |button:start_debounce|                    ; 4 (0)               ; 6 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:start_debounce                                                                          ; button             ; work          ;
+;       |Debounce:Debounce_Inst|                ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:start_debounce|Debounce:Debounce_Inst                                                   ; Debounce           ; work          ;
+;       |Sync:Sync_Inst|                        ; 1 (1)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|button:start_debounce|Sync:Sync_Inst                                                           ; Sync               ; work          ;
+;    |clock_doubler:clock_doubler_inst|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|clock_doubler:clock_doubler_inst                                                               ; clock_doubler      ; clock_doubler ;
+;       |clock_doubler_0002:clock_doubler_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst                         ; clock_doubler_0002 ; clock_doubler ;
+;          |altera_pll:altera_pll_i|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i ; altera_pll         ; work          ;
+;    |control:control_inst|                     ; 19 (19)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|control:control_inst                                                                           ; control            ; work          ;
+;    |gold_mult:gold_mult_inst|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |mult16_tester|gold_mult:gold_mult_inst                                                                       ; gold_mult          ; work          ;
+;    |progress:progress_inst|                   ; 38 (2)              ; 100 (34)                  ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|progress:progress_inst                                                                         ; progress           ; work          ;
+;       |counter:counter_inst|                  ; 36 (36)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|progress:progress_inst|counter:counter_inst                                                    ; counter            ; work          ;
+;    |seg_disp:seg_disp_A|                      ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|seg_disp:seg_disp_A                                                                            ; seg_disp           ; work          ;
+;    |seg_disp:seg_disp_B|                      ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|seg_disp:seg_disp_B                                                                            ; seg_disp           ; work          ;
+;    |test_mult:test_mult_inst|                 ; 24 (24)             ; 69 (69)                   ; 0                 ; 0          ; 0    ; 0            ; |mult16_tester|test_mult:test_mult_inst                                                                       ; test_mult          ; work          ;
++-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------------+---------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Two Independent 18x18           ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                             ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                 ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------+-----------------+
+; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |mult16_tester|clock_doubler:clock_doubler_inst ; clock_doubler.v ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; test_mult:test_mult_inst|a_reg[16..31] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 16 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 197   ;
+; Number of registers using Synchronous Clear  ; 140   ;
+; Number of registers using Synchronous Load   ; 32    ;
+; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 81    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |mult16_tester|progress:progress_inst|b[9]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |mult16_tester|test_mult:test_mult_inst|result[23]                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |mult16_tester|button:start_debounce|Debounce:Debounce_Inst|counter[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |mult16_tester|button:error_debounce|Debounce:Debounce_Inst|counter[0] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |mult16_tester|progress:progress_inst|counter:counter_inst|count[26]   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |mult16_tester ;
++-----------------+---------+---------------------------------------------------+
+; Parameter Name  ; Value   ; Type                                              ;
++-----------------+---------+---------------------------------------------------+
+; HEX_0           ; 1000000 ; Unsigned Binary                                   ;
+; HEX_1           ; 1111001 ; Unsigned Binary                                   ;
+; HEX_2           ; 0100100 ; Unsigned Binary                                   ;
+; HEX_3           ; 0110000 ; Unsigned Binary                                   ;
+; HEX_4           ; 0011001 ; Unsigned Binary                                   ;
+; HEX_5           ; 0010010 ; Unsigned Binary                                   ;
+; HEX_6           ; 0000010 ; Unsigned Binary                                   ;
+; HEX_7           ; 1001110 ; Unsigned Binary                                   ;
+; HEX_8           ; 0000000 ; Unsigned Binary                                   ;
+; HEX_9           ; 0010000 ; Unsigned Binary                                   ;
+; HEX_A           ; 0001000 ; Unsigned Binary                                   ;
+; HEX_B           ; 0000011 ; Unsigned Binary                                   ;
+; HEX_C           ; 1000110 ; Unsigned Binary                                   ;
+; HEX_D           ; 0100001 ; Unsigned Binary                                   ;
+; HEX_E           ; 0000110 ; Unsigned Binary                                   ;
+; HEX_F           ; 0001110 ; Unsigned Binary                                   ;
+; HEX_S           ; 0010010 ; Unsigned Binary                                   ;
+; HEX_P           ; 0001100 ; Unsigned Binary                                   ;
+; IDLE            ; 0000    ; Unsigned Binary                                   ;
+; START           ; 0001    ; Unsigned Binary                                   ;
+; SET_NEW_INPUT   ; 0010    ; Unsigned Binary                                   ;
+; TEST_NEW_INPUT  ; 0011    ; Unsigned Binary                                   ;
+; TEST_PROCESSING ; 0100    ; Unsigned Binary                                   ;
+; TEST_PASSED     ; 0101    ; Unsigned Binary                                   ;
+; TEST_FAILED     ; 0110    ; Unsigned Binary                                   ;
+; UPDATE_INPUTS   ; 0111    ; Unsigned Binary                                   ;
+; TEST_COMPLETE   ; 1000    ; Unsigned Binary                                   ;
++-----------------+---------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i ;
++--------------------------------------+------------------------+-----------------------------------------------------------------------------+
+; Parameter Name                       ; Value                  ; Type                                                                        ;
++--------------------------------------+------------------------+-----------------------------------------------------------------------------+
+; reference_clock_frequency            ; 50.0 MHz               ; String                                                                      ;
+; fractional_vco_multiplier            ; false                  ; String                                                                      ;
+; pll_type                             ; General                ; String                                                                      ;
+; pll_subtype                          ; General                ; String                                                                      ;
+; number_of_clocks                     ; 1                      ; Signed Integer                                                              ;
+; operation_mode                       ; direct                 ; String                                                                      ;
+; deserialization_factor               ; 4                      ; Signed Integer                                                              ;
+; data_rate                            ; 0                      ; Signed Integer                                                              ;
+; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                                                              ;
+; output_clock_frequency0              ; 100.000000 MHz         ; String                                                                      ;
+; phase_shift0                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle0                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency1              ; 0 MHz                  ; String                                                                      ;
+; phase_shift1                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle1                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency2              ; 0 MHz                  ; String                                                                      ;
+; phase_shift2                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle2                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency3              ; 0 MHz                  ; String                                                                      ;
+; phase_shift3                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle3                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency4              ; 0 MHz                  ; String                                                                      ;
+; phase_shift4                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle4                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency5              ; 0 MHz                  ; String                                                                      ;
+; phase_shift5                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle5                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency6              ; 0 MHz                  ; String                                                                      ;
+; phase_shift6                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle6                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency7              ; 0 MHz                  ; String                                                                      ;
+; phase_shift7                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle7                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency8              ; 0 MHz                  ; String                                                                      ;
+; phase_shift8                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle8                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency9              ; 0 MHz                  ; String                                                                      ;
+; phase_shift9                         ; 0 ps                   ; String                                                                      ;
+; duty_cycle9                          ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency10             ; 0 MHz                  ; String                                                                      ;
+; phase_shift10                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle10                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency11             ; 0 MHz                  ; String                                                                      ;
+; phase_shift11                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle11                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency12             ; 0 MHz                  ; String                                                                      ;
+; phase_shift12                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle12                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency13             ; 0 MHz                  ; String                                                                      ;
+; phase_shift13                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle13                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency14             ; 0 MHz                  ; String                                                                      ;
+; phase_shift14                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle14                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency15             ; 0 MHz                  ; String                                                                      ;
+; phase_shift15                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle15                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency16             ; 0 MHz                  ; String                                                                      ;
+; phase_shift16                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle16                         ; 50                     ; Signed Integer                                                              ;
+; output_clock_frequency17             ; 0 MHz                  ; String                                                                      ;
+; phase_shift17                        ; 0 ps                   ; String                                                                      ;
+; duty_cycle17                         ; 50                     ; Signed Integer                                                              ;
+; clock_name_0                         ;                        ; String                                                                      ;
+; clock_name_1                         ;                        ; String                                                                      ;
+; clock_name_2                         ;                        ; String                                                                      ;
+; clock_name_3                         ;                        ; String                                                                      ;
+; clock_name_4                         ;                        ; String                                                                      ;
+; clock_name_5                         ;                        ; String                                                                      ;
+; clock_name_6                         ;                        ; String                                                                      ;
+; clock_name_7                         ;                        ; String                                                                      ;
+; clock_name_8                         ;                        ; String                                                                      ;
+; clock_name_global_0                  ; false                  ; String                                                                      ;
+; clock_name_global_1                  ; false                  ; String                                                                      ;
+; clock_name_global_2                  ; false                  ; String                                                                      ;
+; clock_name_global_3                  ; false                  ; String                                                                      ;
+; clock_name_global_4                  ; false                  ; String                                                                      ;
+; clock_name_global_5                  ; false                  ; String                                                                      ;
+; clock_name_global_6                  ; false                  ; String                                                                      ;
+; clock_name_global_7                  ; false                  ; String                                                                      ;
+; clock_name_global_8                  ; false                  ; String                                                                      ;
+; m_cnt_hi_div                         ; 1                      ; Signed Integer                                                              ;
+; m_cnt_lo_div                         ; 1                      ; Signed Integer                                                              ;
+; m_cnt_bypass_en                      ; false                  ; String                                                                      ;
+; m_cnt_odd_div_duty_en                ; false                  ; String                                                                      ;
+; n_cnt_hi_div                         ; 1                      ; Signed Integer                                                              ;
+; n_cnt_lo_div                         ; 1                      ; Signed Integer                                                              ;
+; n_cnt_bypass_en                      ; false                  ; String                                                                      ;
+; n_cnt_odd_div_duty_en                ; false                  ; String                                                                      ;
+; c_cnt_hi_div0                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div0                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en0                     ; false                  ; String                                                                      ;
+; c_cnt_in_src0                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en0               ; false                  ; String                                                                      ;
+; c_cnt_prst0                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div1                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div1                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en1                     ; false                  ; String                                                                      ;
+; c_cnt_in_src1                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en1               ; false                  ; String                                                                      ;
+; c_cnt_prst1                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div2                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div2                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en2                     ; false                  ; String                                                                      ;
+; c_cnt_in_src2                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en2               ; false                  ; String                                                                      ;
+; c_cnt_prst2                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div3                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div3                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en3                     ; false                  ; String                                                                      ;
+; c_cnt_in_src3                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en3               ; false                  ; String                                                                      ;
+; c_cnt_prst3                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div4                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div4                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en4                     ; false                  ; String                                                                      ;
+; c_cnt_in_src4                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en4               ; false                  ; String                                                                      ;
+; c_cnt_prst4                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div5                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div5                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en5                     ; false                  ; String                                                                      ;
+; c_cnt_in_src5                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en5               ; false                  ; String                                                                      ;
+; c_cnt_prst5                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div6                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div6                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en6                     ; false                  ; String                                                                      ;
+; c_cnt_in_src6                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en6               ; false                  ; String                                                                      ;
+; c_cnt_prst6                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div7                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div7                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en7                     ; false                  ; String                                                                      ;
+; c_cnt_in_src7                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en7               ; false                  ; String                                                                      ;
+; c_cnt_prst7                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div8                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div8                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en8                     ; false                  ; String                                                                      ;
+; c_cnt_in_src8                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en8               ; false                  ; String                                                                      ;
+; c_cnt_prst8                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div9                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div9                        ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en9                     ; false                  ; String                                                                      ;
+; c_cnt_in_src9                        ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en9               ; false                  ; String                                                                      ;
+; c_cnt_prst9                          ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div10                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div10                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en10                    ; false                  ; String                                                                      ;
+; c_cnt_in_src10                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en10              ; false                  ; String                                                                      ;
+; c_cnt_prst10                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div11                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div11                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en11                    ; false                  ; String                                                                      ;
+; c_cnt_in_src11                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en11              ; false                  ; String                                                                      ;
+; c_cnt_prst11                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div12                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div12                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en12                    ; false                  ; String                                                                      ;
+; c_cnt_in_src12                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en12              ; false                  ; String                                                                      ;
+; c_cnt_prst12                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div13                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div13                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en13                    ; false                  ; String                                                                      ;
+; c_cnt_in_src13                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en13              ; false                  ; String                                                                      ;
+; c_cnt_prst13                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div14                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div14                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en14                    ; false                  ; String                                                                      ;
+; c_cnt_in_src14                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en14              ; false                  ; String                                                                      ;
+; c_cnt_prst14                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div15                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div15                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en15                    ; false                  ; String                                                                      ;
+; c_cnt_in_src15                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en15              ; false                  ; String                                                                      ;
+; c_cnt_prst15                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div16                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div16                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en16                    ; false                  ; String                                                                      ;
+; c_cnt_in_src16                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en16              ; false                  ; String                                                                      ;
+; c_cnt_prst16                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                                                              ;
+; c_cnt_hi_div17                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_lo_div17                       ; 1                      ; Signed Integer                                                              ;
+; c_cnt_bypass_en17                    ; false                  ; String                                                                      ;
+; c_cnt_in_src17                       ; ph_mux_clk             ; String                                                                      ;
+; c_cnt_odd_div_duty_en17              ; false                  ; String                                                                      ;
+; c_cnt_prst17                         ; 1                      ; Signed Integer                                                              ;
+; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                                                              ;
+; pll_vco_div                          ; 1                      ; Signed Integer                                                              ;
+; pll_slf_rst                          ; false                  ; String                                                                      ;
+; pll_bw_sel                           ; low                    ; String                                                                      ;
+; pll_output_clk_frequency             ; 0 MHz                  ; String                                                                      ;
+; pll_cp_current                       ; 0                      ; Signed Integer                                                              ;
+; pll_bwctrl                           ; 0                      ; Signed Integer                                                              ;
+; pll_fractional_division              ; 1                      ; Signed Integer                                                              ;
+; pll_fractional_cout                  ; 24                     ; Signed Integer                                                              ;
+; pll_dsm_out_sel                      ; 1st_order              ; String                                                                      ;
+; mimic_fbclk_type                     ; gclk                   ; String                                                                      ;
+; pll_fbclk_mux_1                      ; glb                    ; String                                                                      ;
+; pll_fbclk_mux_2                      ; fb_1                   ; String                                                                      ;
+; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                                                      ;
+; pll_vcoph_div                        ; 1                      ; Signed Integer                                                              ;
+; refclk1_frequency                    ; 0 MHz                  ; String                                                                      ;
+; pll_clkin_0_src                      ; clk_0                  ; String                                                                      ;
+; pll_clkin_1_src                      ; clk_0                  ; String                                                                      ;
+; pll_clk_loss_sw_en                   ; false                  ; String                                                                      ;
+; pll_auto_clk_sw_en                   ; false                  ; String                                                                      ;
+; pll_manu_clk_sw_en                   ; false                  ; String                                                                      ;
+; pll_clk_sw_dly                       ; 0                      ; Signed Integer                                                              ;
+; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                                      ;
+; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                                                      ;
++--------------------------------------+------------------------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button:start_debounce|Sync:Sync_Inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; SYNC_BITS      ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button:start_debounce|Debounce:Debounce_Inst ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; MAX_COUNT      ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button:error_debounce|Sync:Sync_Inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; SYNC_BITS      ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: button:error_debounce|Debounce:Debounce_Inst ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; MAX_COUNT      ; 4     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: control:control_inst ;
++-----------------+-------+-----------------------------------------+
+; Parameter Name  ; Value ; Type                                    ;
++-----------------+-------+-----------------------------------------+
+; IDLE            ; 0000  ; Unsigned Binary                         ;
+; START           ; 0001  ; Unsigned Binary                         ;
+; SET_NEW_INPUT   ; 0010  ; Unsigned Binary                         ;
+; TEST_NEW_INPUT  ; 0011  ; Unsigned Binary                         ;
+; TEST_PROCESSING ; 0100  ; Unsigned Binary                         ;
+; TEST_PASSED     ; 0101  ; Unsigned Binary                         ;
+; TEST_FAILED     ; 0110  ; Unsigned Binary                         ;
+; UPDATE_INPUTS   ; 0111  ; Unsigned Binary                         ;
+; TEST_COMPLETE   ; 1000  ; Unsigned Binary                         ;
++-----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: progress:progress_inst|counter:counter_inst ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 33    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: test_mult:test_mult_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 16    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg_disp:seg_disp_A ;
++----------------+---------+---------------------------------------+
+; Parameter Name ; Value   ; Type                                  ;
++----------------+---------+---------------------------------------+
+; HEX_0          ; 1000000 ; Unsigned Binary                       ;
+; HEX_1          ; 1111001 ; Unsigned Binary                       ;
+; HEX_2          ; 0100100 ; Unsigned Binary                       ;
+; HEX_3          ; 0110000 ; Unsigned Binary                       ;
+; HEX_4          ; 0011001 ; Unsigned Binary                       ;
+; HEX_5          ; 0010010 ; Unsigned Binary                       ;
+; HEX_6          ; 0000010 ; Unsigned Binary                       ;
+; HEX_7          ; 1001110 ; Unsigned Binary                       ;
+; HEX_8          ; 0000000 ; Unsigned Binary                       ;
+; HEX_9          ; 0010000 ; Unsigned Binary                       ;
+; HEX_A          ; 0001000 ; Unsigned Binary                       ;
+; HEX_B          ; 0000011 ; Unsigned Binary                       ;
+; HEX_C          ; 1000110 ; Unsigned Binary                       ;
+; HEX_D          ; 0100001 ; Unsigned Binary                       ;
+; HEX_E          ; 0000110 ; Unsigned Binary                       ;
+; HEX_F          ; 0001110 ; Unsigned Binary                       ;
+; HEX_S          ; 0010010 ; Unsigned Binary                       ;
+; HEX_P          ; 0001100 ; Unsigned Binary                       ;
++----------------+---------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg_disp:seg_disp_B ;
++----------------+---------+---------------------------------------+
+; Parameter Name ; Value   ; Type                                  ;
++----------------+---------+---------------------------------------+
+; HEX_0          ; 1000000 ; Unsigned Binary                       ;
+; HEX_1          ; 1111001 ; Unsigned Binary                       ;
+; HEX_2          ; 0100100 ; Unsigned Binary                       ;
+; HEX_3          ; 0110000 ; Unsigned Binary                       ;
+; HEX_4          ; 0011001 ; Unsigned Binary                       ;
+; HEX_5          ; 0010010 ; Unsigned Binary                       ;
+; HEX_6          ; 0000010 ; Unsigned Binary                       ;
+; HEX_7          ; 1001110 ; Unsigned Binary                       ;
+; HEX_8          ; 0000000 ; Unsigned Binary                       ;
+; HEX_9          ; 0010000 ; Unsigned Binary                       ;
+; HEX_A          ; 0001000 ; Unsigned Binary                       ;
+; HEX_B          ; 0000011 ; Unsigned Binary                       ;
+; HEX_C          ; 1000110 ; Unsigned Binary                       ;
+; HEX_D          ; 0100001 ; Unsigned Binary                       ;
+; HEX_E          ; 0000110 ; Unsigned Binary                       ;
+; HEX_F          ; 0001110 ; Unsigned Binary                       ;
+; HEX_S          ; 0010010 ; Unsigned Binary                       ;
+; HEX_P          ; 0001100 ; Unsigned Binary                       ;
++----------------+---------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 197                         ;
+;     CLR               ; 2                           ;
+;     CLR SCLR          ; 19                          ;
+;     CLR SCLR SLD      ; 16                          ;
+;     CLR SLD           ; 16                          ;
+;     ENA               ; 1                           ;
+;     ENA CLR           ; 16                          ;
+;     ENA SCLR          ; 64                          ;
+;     SCLR              ; 41                          ;
+;     plain             ; 22                          ;
+; arriav_lcell_comb     ; 151                         ;
+;     arith             ; 50                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 32                          ;
+;         2 data inputs ; 17                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 100                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 34                          ;
+;         5 data inputs ; 27                          ;
+;         6 data inputs ; 13                          ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 46                          ;
+; generic_pll           ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.20                        ;
+; Average LUT depth     ; 2.11                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Mar 02 22:22:12 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mult16_tester -c mult16_tester
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file progress.sv
+    Info (12023): Found entity 1: progress File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv Line: 5
+Info (12021): Found 2 design units, including 2 entities, in source file seg_disp.sv
+    Info (12023): Found entity 1: seg_disp File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv Line: 1
+    Info (12023): Found entity 2: tb_seg_disp File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv Line: 54
+Info (12021): Found 1 design units, including 1 entities, in source file control.sv
+    Info (12023): Found entity 1: control File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file mult16_tester.sv
+    Info (12023): Found entity 1: mult16_tester File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 1
+    Info (12023): Found entity 2: mult16_tester_tb File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 233
+Info (12021): Found 1 design units, including 1 entities, in source file test_mult.sv
+    Info (12023): Found entity 1: test_mult File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file mult16_tester_defs.sv
+Info (12021): Found 1 design units, including 1 entities, in source file gold_mult.sv
+    Info (12023): Found entity 1: gold_mult File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file compare.sv
+    Info (12023): Found entity 1: compare File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv Line: 1
+    Info (12023): Found entity 2: compare_tb File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv Line: 20
+Info (12021): Found 4 design units, including 4 entities, in source file button.sv
+    Info (12023): Found entity 1: button File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 1
+    Info (12023): Found entity 2: Debounce File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 14
+    Info (12023): Found entity 3: Sync File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 42
+    Info (12023): Found entity 4: button_tb File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 62
+Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
+    Info (12023): Found entity 1: counter File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_doubler.v
+    Info (12023): Found entity 1: clock_doubler File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file clock_doubler/clock_doubler_0002.v
+    Info (12023): Found entity 1: clock_doubler_0002 File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler/clock_doubler_0002.v Line: 2
+Info (12127): Elaborating entity "mult16_tester" for the top level hierarchy
+Info (12128): Elaborating entity "clock_doubler" for hierarchy "clock_doubler:clock_doubler_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 68
+Info (12128): Elaborating entity "clock_doubler_0002" for hierarchy "clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler.v Line: 20
+Info (12128): Elaborating entity "altera_pll" for hierarchy "clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler/clock_doubler_0002.v Line: 85
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler/clock_doubler_0002.v Line: 85
+Info (12133): Instantiated megafunction "clock_doubler:clock_doubler_inst|clock_doubler_0002:clock_doubler_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler/clock_doubler_0002.v Line: 85
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "direct"
+    Info (12134): Parameter "number_of_clocks" = "1"
+    Info (12134): Parameter "output_clock_frequency0" = "100.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "0 MHz"
+    Info (12134): Parameter "phase_shift1" = "0 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
+    Info (12134): Parameter "phase_shift2" = "0 ps"
+    Info (12134): Parameter "duty_cycle2" = "50"
+    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+    Info (12134): Parameter "phase_shift3" = "0 ps"
+    Info (12134): Parameter "duty_cycle3" = "50"
+    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+    Info (12134): Parameter "phase_shift4" = "0 ps"
+    Info (12134): Parameter "duty_cycle4" = "50"
+    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+    Info (12134): Parameter "phase_shift5" = "0 ps"
+    Info (12134): Parameter "duty_cycle5" = "50"
+    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+    Info (12134): Parameter "phase_shift6" = "0 ps"
+    Info (12134): Parameter "duty_cycle6" = "50"
+    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+    Info (12134): Parameter "phase_shift7" = "0 ps"
+    Info (12134): Parameter "duty_cycle7" = "50"
+    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+    Info (12134): Parameter "phase_shift8" = "0 ps"
+    Info (12134): Parameter "duty_cycle8" = "50"
+    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+    Info (12134): Parameter "phase_shift9" = "0 ps"
+    Info (12134): Parameter "duty_cycle9" = "50"
+    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+    Info (12134): Parameter "phase_shift10" = "0 ps"
+    Info (12134): Parameter "duty_cycle10" = "50"
+    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+    Info (12134): Parameter "phase_shift11" = "0 ps"
+    Info (12134): Parameter "duty_cycle11" = "50"
+    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+    Info (12134): Parameter "phase_shift12" = "0 ps"
+    Info (12134): Parameter "duty_cycle12" = "50"
+    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+    Info (12134): Parameter "phase_shift13" = "0 ps"
+    Info (12134): Parameter "duty_cycle13" = "50"
+    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+    Info (12134): Parameter "phase_shift14" = "0 ps"
+    Info (12134): Parameter "duty_cycle14" = "50"
+    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+    Info (12134): Parameter "phase_shift15" = "0 ps"
+    Info (12134): Parameter "duty_cycle15" = "50"
+    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+    Info (12134): Parameter "phase_shift16" = "0 ps"
+    Info (12134): Parameter "duty_cycle16" = "50"
+    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+    Info (12134): Parameter "phase_shift17" = "0 ps"
+    Info (12134): Parameter "duty_cycle17" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (12128): Elaborating entity "button" for hierarchy "button:start_debounce" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 84
+Info (12128): Elaborating entity "Sync" for hierarchy "button:start_debounce|Sync:Sync_Inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 8
+Info (12128): Elaborating entity "Debounce" for hierarchy "button:start_debounce|Debounce:Debounce_Inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at button.sv(35): truncated value with size 32 to match size of target (2) File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv Line: 35
+Info (12128): Elaborating entity "control" for hierarchy "control:control_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 100
+Info (12128): Elaborating entity "progress" for hierarchy "progress:progress_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 111
+Info (12128): Elaborating entity "counter" for hierarchy "progress:progress_inst|counter:counter_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv Line: 25
+Info (12128): Elaborating entity "test_mult" for hierarchy "test_mult:test_mult_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 123
+Warning (10230): Verilog HDL assignment warning at test_mult.sv(40): truncated value with size 32 to match size of target (17) File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv Line: 40
+Info (12128): Elaborating entity "gold_mult" for hierarchy "gold_mult:gold_mult_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 130
+Info (12128): Elaborating entity "compare" for hierarchy "compare:compare_inst" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 137
+Info (12128): Elaborating entity "seg_disp" for hierarchy "seg_disp:seg_disp_A" File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 144
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 20
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 20
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 21
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv Line: 21
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 317 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 269 logic cells
+    Info (21065): Implemented 1 PLLs
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Thu Mar 02 22:22:53 2023
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:19
+
+

@@ -1,0 +1,155 @@
+# Reading pref.tcl
+# do mult16_tester_run_msim_rtl_systemverilog.do
+# if ![file isdirectory mult16_tester_iputf_libs] {
+# 	file mkdir mult16_tester_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:26 on Mar 02,2023
+# vlog -reportprogress 300 C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo 
+# -- Compiling module clock_doubler
+# 
+# Top level modules:
+# 	clock_doubler
+# End time: 21:17:26 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:26 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/progress.sv 
+# -- Compiling module progress
+# 
+# Top level modules:
+# 	progress
+# End time: 21:17:26 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:26 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/seg_disp.sv 
+# -- Compiling module seg_disp
+# -- Compiling module tb_seg_disp
+# 
+# Top level modules:
+# 	tb_seg_disp
+# End time: 21:17:26 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:26 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 21:17:26 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:26 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/mult16_tester.sv 
+# -- Compiling module mult16_tester
+# -- Compiling module mult16_tester_tb
+# 
+# Top level modules:
+# 	mult16_tester_tb
+# End time: 21:17:27 on Mar 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/test_mult.sv 
+# -- Compiling module test_mult
+# 
+# Top level modules:
+# 	test_mult
+# End time: 21:17:27 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/gold_mult.sv 
+# -- Compiling module gold_mult
+# 
+# Top level modules:
+# 	gold_mult
+# End time: 21:17:27 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/compare.sv 
+# -- Compiling module compare
+# -- Compiling module compare_tb
+# 
+# Top level modules:
+# 	compare_tb
+# End time: 21:17:27 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/button.sv 
+# -- Compiling module button
+# -- Compiling module Debounce
+# -- Compiling module Sync
+# -- Compiling module button_tb
+# 
+# Top level modules:
+# 	button_tb
+# End time: 21:17:27 on Mar 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project {C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Mar 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project" C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 21:17:28 on Mar 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.mult16_tester_tb
+# vsim work.mult16_tester_tb 
+# Start time: 21:18:02 on Mar 02,2023
+# Loading sv_std.std
+# Loading work.mult16_tester_tb
+# Loading work.mult16_tester
+# Loading work.clock_doubler
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'mult16_tester_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /mult16_tester_tb/m16_tester/clock_doubler_inst File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo
+# ** Error: (vsim-3033) Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mult16_tester_tb/m16_tester/clock_doubler_inst File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/clock_doubler_sim/clock_doubler.vo Line: 46
+#         Searched libraries:
+#             C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/simulation/modelsim/rtl_work
+# Loading work.button
+# Loading work.Sync
+# Loading work.Debounce
+# Loading work.control
+# Loading work.progress
+# Loading work.counter
+# Loading work.test_mult
+# Loading work.gold_mult
+# Loading work.compare
+# Loading work.seg_disp
+# Error loading design
+# End time: 21:18:03 on Mar 02,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0

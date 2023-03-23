@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at status.sv(36): always construct contains both blocking and non-blocking assignments File: C:/Users/sefun/Dev/digital_desgin_2/homework5/project/status.sv Line: 36

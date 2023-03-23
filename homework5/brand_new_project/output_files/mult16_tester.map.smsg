@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at status.sv(2): object "START" differs only in case from object "start" in the same scope File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/status.sv Line: 2
+Info (10281): Verilog HDL Declaration information at control.sv(2): object "START" differs only in case from object "start" in the same scope File: C:/Users/sefun/Dev/digital_desgin_2/homework5/brand_new_project/control.sv Line: 2

@@ -1,0 +1,13 @@
+"""
+As someone who has never heard this album, I am already gaining more appreciation for jazz after listening. I didn't even realize that Ella Fitzgerald and Louis Armstrong made a whole album together until joining this class. My first time listening to this album was the day that it was assigned and I couldn't get myself to stop listening. I love the sound of this album and the dreamy feeling you get when listening to it. One of my favorite songs from this album was "Moonlight in Vermont" because it is so calming to listen to. Ella Fitzgerald has such a unique and amazing voice that I could listen to it for hours. I believe that the contrast between Ella and Louis' voices make this music even more interesting because Ella has such a smooth and calming voice, while Louis has such a raspy and interesting sound to his voice. 
+
+I would listen to this album when cooking dinner or working on other homework and I just kept replaying the songs over and over again. In the song "Can't We Be Friends," I really enjoy how it's a song coming from two different perspectives of a boy and a girl and how they are both thinking primarily the same things.  Louis Armstrong is one of the best trumpet players and his sound his so unique to any other trumpet player I have heard. He puts a lot of soul into his music and makes it feel as though you are actually in person listening to him play. The trumpet solos are some of my favorite parts of the music because he is so talented and makes me want to listen to him forever. 
+
+I very much enjoyed listening to this whole album and will continue listening to the album even after the lesson is over. I also want to start listening to more music created by these two different artists and really start to listen to more music and the meaning behind each song. Every single song on this album is different and the voices of Ella and Louis are so different, but somehow they connect so well and sound absolutely amazing together.
+
+Reply to the above comments on the 1956 album Ella and Louis :
+Hey Nikki, I totally agree with your breakdown. I also really enjoyed the song "Can't We Be Friends" and I think it's a great example of how Ella and Louis' voices complement each other. I also really enjoyed the trumpet solos and I think that Louis Armstrong is a great example of how jazz can be so much more than just a singer and a piano. 
+I canb aslo see how modern jazz artists like Frank Sinatra and Michael Buble have been influenced by Ella and Louis. I think the over all sound of the album is very smooth.
+its craxy to think that artist from the 1950s sound is still so impactful today. 
+
+"""

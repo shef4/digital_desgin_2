@@ -1,0 +1,18 @@
+`ifndef STATUS_DEFS_SV
+`define STATUS_DEFS_SV
+
+`timescale 1ns/1ns
+`default_nettype none
+
+
+ // FSM states
+ parameter    IDLE = 3'd0;
+ parameter    START = 3'd1;
+ parameter    SET_INPUTS = 3'd2;
+ parameter    TEST_PROCESSING = 3'd3;
+ parameter    TEST_PASSED = 3'd4;
+ parameter    TEST_FAILED = 3'd5;
+ parameter    UPDATE_INPUTS = 3'd6;
+ parameter    TEST_COMPLETE = 3'd7;
+
+`endif // STATUS_DEFS_SV

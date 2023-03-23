@@ -1,0 +1,44 @@
+`ifndef MULT16_TESTER_DEFS_SV
+`define MULT16_TESTER_DEFS_SV
+
+
+ // FSM states
+ parameter IDLE = 0;
+ parameter RESET = 1;
+ parameter START = 2;
+ parameter SET_INPUTS = 3;
+ parameter COMPARE_RESULTS = 4;
+ parameter UPDATE_INPUTS = 5;
+ parameter FINISHED_TESTING = 6;
+
+
+// Seven-segment display constants
+ parameter IDLE_STATUS= 5'd16;
+ parameter START_STATUS = 5'd17;
+ parameter PROGRESS_STATUS = 5'd18;
+ parameter ERROR_STATUS = 5'd19;
+ parameter FINISHED_STATUS = 5'd20;
+ parameter IDLE_DISPLAY= 7'b100_0000;
+ parameter START_DISPLAY = 7'b110_1111;
+ parameter PROGRESS_DISPLAY = 7'b011_1100;
+ parameter ERROR_DISPLAY = 7'b100_1110;
+ parameter FINISHED_DISPLAY = 7'b000_1111;
+ parameter HEX_ZERO = 7'b100_0000;
+ parameter HEX_ONE = 7'b111_1001;
+ parameter HEX_TWO = 7'b010_0100;
+ parameter HEX_THREE = 7'b011_0000;
+ parameter HEX_FOUR = 7'b001_1001;
+ parameter HEX_FIVE = 7'b001_0010;
+ parameter HEX_SIX = 7'b000_0010;
+ parameter HEX_SEVEN = 7'b111_1000;
+ parameter HEX_EIGHT = 7'b000_0000;
+ parameter HEX_NINE = 7'b001_0000;
+ parameter HEX_A = 7'b000_1000;
+ parameter HEX_B = 7'b000_1011;
+ parameter HEX_C = 7'b100_0110;
+ parameter HEX_D = 7'b010_0011;
+ parameter HEX_E = 7'b100_1110;
+ parameter HEX_F = 7'b000_1111;
+
+
+`endif

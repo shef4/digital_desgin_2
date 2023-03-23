@@ -1,0 +1,90 @@
+module status(
+    input         clock,
+    input         reset_n,
+    input         begin_test,
+    input         inject_error,
+    input         busy,
+    input         results_match,
+    output reg    [6:0] status_out,
+	 output reg		[15:0]	opA,
+	 output reg		[15:0]	opB,
+    output reg         test_mult_start
+);
+
+    reg [3:0] state;
+    reg [3:0] next_state;
+	reg [32:0] count
+    reg [7:0] a_hex_display;
+    reg [7:0] b_hex_display;
+
+    // default values
+    assign test_mult_start = 0;
+
+    always @(posedge clock) begin
+        // update state
+        state <= next_state;
+
+        case (state)
+
+            IDLE:
+                if (!reset_n) begin
+                    next_state = RESET;
+                end else if (begin_test) begin
+                    next_state = START;
+                end else begin
+                    next_state = IDLE;
+                end
+                test_mult_start <= 0;
+
+            RESET:
+                next_state = IDLE;
+                count <= 0;
+				opA <= count[31:24]
+				opB <= count[15:9]
+                status_out <=  IDLE_STATUS;
+
+            START:
+                next_state = SET_INPUTS;
+				pA <= count[31:24]
+				opB <= count[15:9]
+                status_out <=  START_STATUS;
+
+            SET_INPUTS:
+                next_state = COMPARE_RESULTS;
+				opA <= count[31:24]
+				opB <= count[15:9]
+                status_out <=  PROGRESS_STATUS;
+				test_mult_start <= 1;
+
+            COMPARE_RESULTS:
+                if (!busy) begin
+                    test_mult_start <= 0;
+                    if (results_match && !inject_error) begin
+                        next_state = UPDATE_INPUTS;
+                    end else begin
+                        next_state = IDLE;
+                        status_out <=  ERROR_STATUS;
+                    end
+                end
+                    
+            UPDATE_INPUTS:
+                if (count == 32'hffffffff) begin
+                    next_state = FINISHED_TESTING;
+                end else begin
+                    count <= count + 1;
+                    next_state = SET_INPUTS;
+                end
+                opA <= count[31:24]
+                opB <= count[15:9]
+                status_out <=  PROGRESS_STATUS;
+
+            FINISHED_TESTING:
+                next_state = IDLE;
+                status_out <=  FINISHED_STATUS;
+                test_mult_start <= 0;
+
+		endcase
+
+	end
+
+endmodule

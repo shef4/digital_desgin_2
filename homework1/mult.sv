@@ -31,19 +31,8 @@ module mult #(parameter N = 16)  // input operand width
          end
          else begin
 
-            // Version 1
-            // if (b_reg[i] == 1'b1)
-            //    product <= product + ({N'(0), a_reg} << i);
-
-            // Version 2
             // Avoid variable indexing and variable-length shift
             // NEED TO ALSO MAKE a_reg THE SAME LENGTH AS THE product REGISTER
-            // if (b_reg[0] == 1'b1)
-            //    product <= product + a_reg;
-            // a_reg <= (a_reg << 1);
-            // b_reg <= (b_reg >> 1);
-
-            // Version 3
             // Avoid 2N-bit addition
             b_reg <= (b_reg >> 1);
             product[2*N-1:0] <= {1'b0, product[2*N-1:1]};

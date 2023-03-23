@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sefun/Dev/digital_desgin_2/homework5/new_project/simulation/qsim
+vmult16_tester
+Z1 !s110 1677192043
+!i10b 1
+!s100 :FaBDES[fB6zPL;mRA1lh2
+IBZe@IWaTH6BW5@aTE;07:1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1677192040
+8mult16_tester.vo
+Fmult16_tester.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1677192043.000000
+!s107 mult16_tester.vo|
+!s90 -work|work|mult16_tester.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmult16_tester_vlg_vec_tst
+R1
+!i10b 1
+!s100 KRaKKEdZE>l5o3jUZ0DSZ0
+I`[KZZOdBABOd5B0mZV]eO3
+R2
+R0
+w1677192036
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

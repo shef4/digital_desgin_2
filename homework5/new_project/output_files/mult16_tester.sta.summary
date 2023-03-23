@@ -1,0 +1,181 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.574
+TNS   : -221.508
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.471
+TNS   : -138.906
+
+Type  : Slow 1100mV 85C Model Setup 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : -2.617
+TNS   : -15.395
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.607
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -3.775
+TNS   : -221.002
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 2.634
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.225
+TNS   : -80.876
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -35.150
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -7.674
+TNS   : -216.293
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.595
+TNS   : -140.288
+
+Type  : Slow 1100mV 0C Model Setup 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : -2.475
+TNS   : -14.456
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -3.841
+TNS   : -226.164
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : 2.726
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.225
+TNS   : -84.064
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -34.460
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.039
+TNS   : -104.339
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -1.675
+TNS   : -65.547
+
+Type  : Fast 1100mV 85C Model Setup 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : -1.464
+TNS   : -7.988
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : -1.854
+TNS   : -104.515
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : 1.292
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.702
+TNS   : -34.359
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.726
+TNS   : -89.351
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.630
+TNS   : -59.797
+
+Type  : Fast 1100mV 0C Model Setup 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : -1.249
+TNS   : -6.905
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.148
+TNS   : -0.436
+
+Type  : Fast 1100mV 0C Model Hold 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : -1.769
+TNS   : -101.387
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : 1.276
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.702
+TNS   : -34.325
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'seg_disp:seg_disp_inst4|digit[0]'
+Slack : 0.435
+TNS   : 0.000
+
+------------------------------------------------------------

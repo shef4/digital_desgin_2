@@ -1,0 +1,6 @@
+DATE = "16:45:12 February 23, 2023"
+QUARTUS_VERSION = "15.1.0"
+
+# Revisions
+
+PROJECT_REVISION = "DE1_SOC"
