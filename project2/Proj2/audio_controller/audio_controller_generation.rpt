@@ -1,0 +1,29 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_controller.qsys --block-symbol-file --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_controller --family="Cyclone V" --part=5CSEMA6F31C6
+Progress: Loading Proj2/audio_controller.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_controller.qsys --synthesis=VERILOG --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_controller\synthesis --family="Cyclone V" --part=5CSEMA6F31C6
+Progress: Loading Proj2/audio_controller.qsys
+Progress: Reading input file
+Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Progress: Parameterizing module audio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: audio_controller: Generating audio_controller "audio_controller" for QUARTUS_SYNTH
+Info: audio_0: Starting Generation of Audio Controller
+Info: audio_0: "audio_controller" instantiated altera_up_avalon_audio "audio_0"
+Info: audio_controller: Done "audio_controller" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

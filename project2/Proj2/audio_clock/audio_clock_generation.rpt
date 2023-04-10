@@ -1,0 +1,30 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_clock.qsys --block-symbol-file --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_clock --family="Cyclone V" --part=5CSEMA6F31C6
+Progress: Loading Proj2/audio_clock.qsys
+Progress: Reading input file
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_clock.qsys --synthesis=VERILOG --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project2\Proj2\audio_clock\synthesis --family="Cyclone V" --part=5CSEMA6F31C6
+Progress: Loading Proj2/audio_clock.qsys
+Progress: Reading input file
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: audio_clock: Generating audio_clock "audio_clock" for QUARTUS_SYNTH
+Info: audio_pll_0: "audio_clock" instantiated altera_up_avalon_audio_pll "audio_pll_0"
+Info: audio_pll: "audio_pll_0" instantiated altera_pll "audio_pll"
+Info: reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: audio_clock: Done "audio_clock" with 4 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

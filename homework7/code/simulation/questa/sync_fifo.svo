@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition"
 
-// DATE "03/14/2023 22:32:54"
+// DATE "03/23/2023 16:41:13"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -40,16 +40,16 @@ module sync_fifo (
 	rd_ptr,
 	almost_full,
 	almost_empty);
-input 	logic clk ;
-input 	logic rst ;
-input 	logic wr_en ;
-input 	logic rd_en ;
-input 	logic [7:0] data_in ;
-output 	logic [7:0] data_out ;
-output 	logic [3:0] wr_ptr ;
-output 	logic [3:0] rd_ptr ;
-output 	logic almost_full ;
-output 	logic almost_empty ;
+input 	clk;
+input 	rst;
+input 	wr_en;
+input 	rd_en;
+input 	[7:0] data_in;
+output 	[7:0] data_out;
+output 	[3:0] wr_ptr;
+output 	[3:0] rd_ptr;
+output 	almost_full;
+output 	almost_empty;
 
 // Design Ports Information
 // data_out[0]	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default

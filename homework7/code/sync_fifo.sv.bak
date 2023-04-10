@@ -1,16 +1,16 @@
 module sync_fifo
   #(parameter ADDR_WIDTH = 4, DATA_WIDTH = 8)
   (
-    logic wire clk,
-    logic wire rst,
-    logic wire wr_en,
-    logic wire rd_en,
-    logic wire [DATA_WIDTH-1:0] data_in,
-    logic wire [DATA_WIDTH-1:0] data_out,
-    logic wire [ADDR_WIDTH-1:0] wr_ptr,
-    logic wire [ADDR_WIDTH-1:0] rd_ptr,
-    logic wire almost_full,
-    logic wire almost_empty
+    input logic clk,
+    input logic rst,
+    input logic wr_en,
+    input logic rd_en,
+    input logic [DATA_WIDTH-1:0] data_in,
+    output logic [DATA_WIDTH-1:0] data_out,
+    output logic [ADDR_WIDTH-1:0] wr_ptr,
+    output logic [ADDR_WIDTH-1:0] rd_ptr,
+    output logic almost_full,
+    output logic almost_empty
   );
  
   localparam FIFO_DEPTH = 1 << ADDR_WIDTH;
@@ -55,14 +55,14 @@ module sync_fifo
 endmodule
 
 
-
-
-module sync_fifo_tb();
+module sync_fifo_tb;
 
   // Parameters
   parameter DATA_WIDTH = 8;
   parameter ADDR_WIDTH = 4;
   localparam FIFO_DEPTH = 1 << ADDR_WIDTH;
+  localparam ALMOST_FULL_THRESHOLD = FIFO_DEPTH * 3/4;
+  localparam ALMOST_EMPTY_THRESHOLD = FIFO_DEPTH * 1/4;
 
   // Inputs
   logic clk = 0;
@@ -92,48 +92,68 @@ module sync_fifo_tb();
       .almost_full(almost_full),
       .almost_empty(almost_empty)
     );
+    
+  // Declare and initialize variables
+  integer used_entries = 0;
+  integer random_seed = 1;
 
   // Testbench logic
+  always #1 clk = ~clk;
+
   always @(posedge clk) begin
     // Generate reset pulse
-    if ($time == 0) begin
-      rst <= 1;
-    end else if ($time == 10) begin
-      rst <= 0;
+    if (rst) begin
+      used_entries <= 0;
+      wr_en <= 0;
+      rd_en <= 0;
+      data_in <= 0;
+      wr_ptr <= 0;
+      rd_ptr <= 0;
+    end else begin
+      // Update used_entries based on wr_en and rd_en
+      if (wr_en && !rd_en && used_entries < FIFO_DEPTH) begin
+        used_entries <= used_entries + 1;
+      end else if (!wr_en && rd_en && used_entries > 0) begin
+        used_entries <= used_entries - 1;
+      end
     end
+
     // Generate random data for write
-    data_in <= $random;
+    data_in <= $urandom(random_seed);
     // Generate random write and read enable signals
-    wr_en <= $random & 1;
-    rd_en <= $random & 1;
+    wr_en <= $urandom_range(random_seed, 0, 1);
+    rd_en <= $urandom_range(random_seed, 0, 1);
+    // Update random seed
+    random_seed <= random_seed + 1;
   end
 
   // Concurrent assertions
   // Check that data_out is the same as data_in after one clock cycle of write
   // and read with the same write and read pointers
-  assert property (
-    @(posedge clk) disable iff (rst) $fell(wr_en) &&
-    @(posedge clk) disable iff (rst) $fell(rd_en) &&
-    $onehot0(wr_ptr) && $onehot0(rd_ptr) &&
-    $stable(data_out, 1) &&
-    (data_out == $past(data_in, 1))
-  ) else $error("Data mismatch");
+  always @(posedge clk) begin
+    if (!rst) begin
+      if (wr_en && rd_en && (wr_ptr == rd_ptr) && (data_out !== data_in)) begin
+        $error("Data mismatch");
+      end
+    end
+  end
 
   // Check that the FIFO is not almost full when used_entries is less than ALMOST_FULL_THRESHOLD
-  assert property (
-    @(posedge clk) disable iff (rst) almost_full == 0 || used_entries >= ALMOST_FULL_THRESHOLD
-  ) else $error("FIFO almost full");
+  always @(posedge clk) begin
+    if (!rst) begin
+      if (almost_full == 1 && used_entries < ALMOST_FULL_THRESHOLD) begin
+        $error("FIFO almost full");
+      end
+    end
+  end
 
   // Check that the FIFO is not almost empty when used_entries is greater than ALMOST_EMPTY_THRESHOLD
-  assert property (
-    @(posedge clk) disable iff (rst) almost_empty == 0 || used_entries <= ALMOST_EMPTY_THRESHOLD
-  ) else $error("FIFO almost empty");
-
-  // Simulate the clock
-  initial begin
-    repeat (20) @(posedge clk);
-    $finish;
+  always @(posedge clk) begin
+    if (!rst) begin
+      if (almost_empty == 1 && used_entries > ALMOST_EMPTY_THRESHOLD) begin
+        $error("FIFO almost empty");
+      end
+    end
   end
 
 endmodule
-

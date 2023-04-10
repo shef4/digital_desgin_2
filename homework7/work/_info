@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/sefun/Dev/digital_desgin_2/homework5/test_code
+vsync_fifo
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1679618916
+!i10b 1
+!s100 zVoMXHgHjE;[l6nP:^XMO1
+I9Ei<?@LaF?eoj7GYRW`Gz1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 sync_fifo_sv_unit
+S1
+Z4 dC:/Users/sefun/Dev/digital_desgin_2/homework7
+Z5 w1679618909
+Z6 8C:/Users/sefun/Dev/digital_desgin_2/homework7/code/sync_fifo.sv
+Z7 FC:/Users/sefun/Dev/digital_desgin_2/homework7/code/sync_fifo.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1679618916.000000
+Z10 !s107 C:/Users/sefun/Dev/digital_desgin_2/homework7/code/sync_fifo.sv|
+Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/homework7/code/sync_fifo.sv|
+!i113 1
+Z12 o-work work -sv
+Z13 tCvgOpt 0
+vsync_fifo_tb
+R0
+R1
+!i10b 1
+!s100 PiNof@?Db;S_IQab=09V]2
+I7k<7M]7_O]O;T5lFTDUA62
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 58
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
