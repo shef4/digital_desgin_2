@@ -10,7 +10,8 @@ module sync_fifo
     output logic [ADDR_WIDTH-1:0] wr_ptr,
     output logic [ADDR_WIDTH-1:0] rd_ptr,
     output logic almost_full,
-    output logic almost_empty
+    output logic almost_empty,
+    
   );
  
   localparam FIFO_DEPTH = 1 << ADDR_WIDTH;
