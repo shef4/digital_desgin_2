@@ -1,0 +1,13 @@
+	component audio_fifo is
+		port (
+			sc_fifo_0_clk_clk         : in  std_logic                     := 'X';             -- clk
+			sc_fifo_0_clk_reset_reset : in  std_logic                     := 'X';             -- reset
+			sc_fifo_0_in_data         : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data
+			sc_fifo_0_in_valid        : in  std_logic                     := 'X';             -- valid
+			sc_fifo_0_in_ready        : out std_logic;                                        -- ready
+			sc_fifo_0_out_data        : out std_logic_vector(15 downto 0);                    -- data
+			sc_fifo_0_out_valid       : out std_logic;                                        -- valid
+			sc_fifo_0_out_ready       : in  std_logic                     := 'X'              -- ready
+		);
+	end component audio_fifo;
+

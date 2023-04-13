@@ -1,0 +1,4 @@
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) audio_config/audio_config.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) audio_fifo/audio_fifo.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) audio_clock/audio_clock.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) audio_controller/audio_controller.qip]

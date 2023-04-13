@@ -1,0 +1,23 @@
+# system info audio_controller on 2023.04.13.09:33:10
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1681392785
+#
+#
+# Files generated for audio_controller on 2023.04.13.09:33:10
+files:
+filepath,kind,attributes,module,is_top
+simulation/audio_controller.v,VERILOG,,audio_controller,true
+simulation/submodules/altera_up_audio_bit_counter.v,VERILOG,,audio_controller_audio_0,false
+simulation/submodules/altera_up_audio_in_deserializer.v,VERILOG,,audio_controller_audio_0,false
+simulation/submodules/altera_up_audio_out_serializer.v,VERILOG,,audio_controller_audio_0,false
+simulation/submodules/altera_up_clock_edge.v,VERILOG,,audio_controller_audio_0,false
+simulation/submodules/altera_up_sync_fifo.v,VERILOG,,audio_controller_audio_0,false
+simulation/submodules/audio_controller_audio_0.v,VERILOG,,audio_controller_audio_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+audio_controller.audio_0,audio_controller_audio_0

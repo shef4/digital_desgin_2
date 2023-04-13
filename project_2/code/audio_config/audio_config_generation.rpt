@@ -1,0 +1,60 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading code/audio_config.qsys
+Progress: Reading input file
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: audio_config.audio_and_video_config_0: audio_and_video_config_0.avalon_av_config_slave must be connected to an Avalon-MM master
+Info: audio_config: Generating audio_config "audio_config" for SIM_VERILOG
+Info: audio_and_video_config_0: Starting Generation of Audio and Video Config
+Info: audio_and_video_config_0: "audio_config" instantiated altera_up_avalon_audio_and_video_config "audio_and_video_config_0"
+Info: audio_config: Done "audio_config" with 2 modules, 16 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config\audio_config.spd --output-directory=C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_config/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config\audio_config.spd --output-directory=C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_config/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_config/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_config/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_config/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config.qsys --block-symbol-file --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading code/audio_config.qsys
+Progress: Reading input file
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: audio_config.audio_and_video_config_0: audio_and_video_config_0.avalon_av_config_slave must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config.qsys --synthesis=VERILOG --greybox --output-directory=C:\Users\sefun\Dev\digital_desgin_2\project_2\code\audio_config\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading code/audio_config.qsys
+Progress: Reading input file
+Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Progress: Parameterizing module audio_and_video_config_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: audio_config.audio_and_video_config_0: audio_and_video_config_0.avalon_av_config_slave must be connected to an Avalon-MM master
+Info: audio_config: Generating audio_config "audio_config" for QUARTUS_SYNTH
+Info: audio_and_video_config_0: Starting Generation of Audio and Video Config
+Info: audio_and_video_config_0: "audio_config" instantiated altera_up_avalon_audio_and_video_config "audio_and_video_config_0"
+Info: audio_config: Done "audio_config" with 2 modules, 16 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

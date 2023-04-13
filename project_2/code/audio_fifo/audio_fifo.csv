@@ -1,0 +1,18 @@
+# system info audio_fifo on 2023.04.13.10:20:27
+system_info:
+name,value
+DEVICE,5CSEMA5F31C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1681395622
+#
+#
+# Files generated for audio_fifo on 2023.04.13.10:20:27
+files:
+filepath,kind,attributes,module,is_top
+simulation/audio_fifo.v,VERILOG,,audio_fifo,true
+simulation/submodules/altera_avalon_sc_fifo.v,VERILOG,,altera_avalon_sc_fifo,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+audio_fifo.sc_fifo_0,altera_avalon_sc_fifo
