@@ -1,0 +1,13 @@
+# Compile of altera_avalon_sc_fifo.v was successful.
+# Compile of audio_fifo.v was successful.
+# Compile of tone_generator.sv was successful with warnings.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tone_generator_tb
+# vsim -gui work.tone_generator_tb 
+# Start time: 17:44:38 on Apr 13,2023
+# Loading sv_std.std
+# Loading work.tone_generator_tb
+# Loading work.tone_generator
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+add wave -position insertpoint sim:/tone_generator_tb/*
+run -all

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.04.13.15:52:11"
+ date="2023.04.13.18:38:43"
  outputDirectory="C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_controller/">
  <perimeter>
   <parameter
@@ -148,12 +148,12 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="audio_controller:1.0:AUTO_AUDIO_0_CLK_CLOCK_DOMAIN=-1,AUTO_AUDIO_0_CLK_CLOCK_RATE=-1,AUTO_AUDIO_0_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1681415525,AUTO_UNIQUE_ID=(altera_up_avalon_audio:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone V,audio_in=false,audio_out=true,avalon_bus_type=Streaming,dw=16)"
+   parameterizationKey="audio_controller:1.0:AUTO_AUDIO_0_CLK_CLOCK_DOMAIN=-1,AUTO_AUDIO_0_CLK_CLOCK_RATE=-1,AUTO_AUDIO_0_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1681425517,AUTO_UNIQUE_ID=(altera_up_avalon_audio:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone V,audio_in=false,audio_out=true,avalon_bus_type=Streaming,dw=16)"
    instancePathKey="audio_controller"
    kind="audio_controller"
    version="1.0"
    name="audio_controller">
-  <parameter name="AUTO_GENERATION_ID" value="1681415525" />
+  <parameter name="AUTO_GENERATION_ID" value="1681425517" />
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_AUDIO_0_CLK_CLOCK_RATE" value="-1" />

@@ -37,7 +37,12 @@ module tone_generator
    logic        square_wave;
    logic [23:0] note_count;
    logic [11:0] sample_count;
+// Sample counter
+//note couter
+// check counter and assign based on
 
+//accum and squar wave not needed just toggle and volu
+  
 	always_ff @(posedge clk, posedge reset) begin
 		if (reset) begin
 			accumulator <= 0;
@@ -50,7 +55,7 @@ module tone_generator
          if (sample_count == SAMPLE_CLK_COUNT) begin
 				sample_count <= 0;
 				square_wave <= ~square_wave;
-				accumulator <= square_wave ? VOLUME : -VOLUME;
+				accumulator <= square_wave ? (VOLUME*10) : (-VOLUME*10);
 			end else begin
 				sample_count <= sample_count + 1;
 			end

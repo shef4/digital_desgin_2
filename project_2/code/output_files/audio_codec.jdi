@@ -1,8 +1,40 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="d0f928a5e1a7f1dddbf2"/>
+    <hash md5_digest_80b="1b83e578c9359b43f7bb"/>
   </project>
   <file_info>
     <file device="5CSEMA5F31C6" path="audio_codec.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="audio_clock:audio_clock_inst" name="audio_clock_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_clock HAS_SOPCINFO 1 GENERATION_ID 1681425483"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="audio_config:audio_config_inst" name="audio_config_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_config HAS_SOPCINFO 1 GENERATION_ID 1681425427"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="audio_controller:audio_controller_inst" name="audio_controller_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_controller HAS_SOPCINFO 1 GENERATION_ID 1681425517"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="audio_fifo:audio_fifo_left_channel_inst" name="audio_fifo_left_channel_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_fifo HAS_SOPCINFO 1 GENERATION_ID 1681425453"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="audio_fifo:audio_fifo_right_channel_inst" name="audio_fifo_right_channel_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME audio_fifo HAS_SOPCINFO 1 GENERATION_ID 1681425453"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>

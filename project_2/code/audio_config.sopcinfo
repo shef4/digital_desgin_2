@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="audio_config" kind="audio_config" version="1.0" fabric="QSYS">
  <!-- Format version 22.1 915 (Future versions may contain additional information.) -->
- <!-- 2023.04.13.15:50:41 -->
+ <!-- 2023.04.13.18:37:07 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1681415441</value>
+  <value>1681425427</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

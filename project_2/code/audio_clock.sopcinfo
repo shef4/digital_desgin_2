@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="audio_clock" kind="audio_clock" version="1.0" fabric="QSYS">
  <!-- Format version 22.1 915 (Future versions may contain additional information.) -->
- <!-- 2023.04.13.15:51:34 -->
+ <!-- 2023.04.13.18:38:03 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1681415494</value>
+  <value>1681425483</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

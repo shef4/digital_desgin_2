@@ -3,9 +3,9 @@ module audio_codec
    //////////// Audio //////////
    // input  logic               AUD_ADCDAT,
    // inout  logic               AUD_ADCLRCK,
-   input  logic               AUD_BCLK,
+   inout  logic               AUD_BCLK,
    output logic               AUD_DACDAT,
-   input  logic               AUD_DACLRCK,
+   inout  logic               AUD_DACLRCK,
    output logic               AUD_XCK,
 
    //////////// CLOCK //////////
@@ -16,8 +16,7 @@ module audio_codec
 
    //////////// I2C for Audio and Video-In //////////
    output                     FPGA_I2C_SCLK,
-   input                      FPGA_I2C_SDAT,
-
+   inout                      FPGA_I2C_SDAT,
    //////////// SEG7 //////////
    // output logic     [6:0]     HEX0,
    // output logic     [6:0]     HEX1,
@@ -44,7 +43,8 @@ module audio_codec
 	
 	//reset
    logic 			reset;
-	logic  [1:0]	reset_reg;
+	logic  			reset_reg1;
+	logic  			reset_reg2;
 	
 	//tone generator
 	logic				sink_ready;
@@ -59,9 +59,6 @@ module audio_codec
 	logic 			audio_fifo_right_channel_source_valid;
 	logic 			audio_fifo_right_channel_sink_ready;
 	
-	//audio config
-	logic 			interface_SDAT;
-	
 	//audio controller
 	logic 			audio_controller_left_channel_sink_ready;
 	logic 			audio_controller_right_channel_sink_ready;
@@ -74,21 +71,19 @@ module audio_codec
 	
 	//button
 	always_ff @ (posedge clk) begin
-		reset_reg[0] <= KEY[0];
+		reset_reg1 <= KEY[0];
    end
 	
 	always_ff @ (posedge clk) begin
-		reset_reg[1] <= reset_reg[0];
+		reset_reg2 <= reset_reg1;
    end
 	
 	always_ff @ (posedge clk) begin
-		reset <= reset_reg[1];
+		reset <= !reset_reg2;
    end
 	
 	// sink ready L & R FIFO to tone generator
 	always_comb sink_ready = audio_fifo_left_channel_sink_ready & audio_fifo_right_channel_sink_ready;
-	
-	assign interface_SDAT = FPGA_I2C_SDAT;
 //=======================================================
 //  Submodules
 //=======================================================
@@ -136,7 +131,7 @@ module audio_codec
 		.audio_and_video_config_0_clk_clk(clk),
 		.audio_and_video_config_0_reset_reset(reset),
 		.audio_and_video_config_0_external_interface_SCLK(FPGA_I2C_SCLK),
-		.audio_and_video_config_0_external_interface_SDAT(interface_SDAT)
+		.audio_and_video_config_0_external_interface_SDAT(FPGA_I2C_SDAT)
 	);
 	
 	//audio controller

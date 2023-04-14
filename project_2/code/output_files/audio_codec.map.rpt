@@ -1,5 +1,5 @@
 Analysis & Synthesis report for audio_codec
-Thu Apr 13 15:52:16 2023
+Thu Apr 13 18:38:51 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -10,45 +10,53 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis IP Cores Summary
-  6. State Machine - |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer
-  7. State Machine - |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
-  8. Registers Packed Into Inferred Megafunctions
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Source assignments for audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram
- 11. Source assignments for audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram
- 12. Source assignments for audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_sbn1:auto_generated
- 13. Source assignments for audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_sbn1:auto_generated
- 14. Parameter Settings for User Entity Instance: tone_generator:tone_generator_inst
- 15. Parameter Settings for User Entity Instance: audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0
- 16. Parameter Settings for User Entity Instance: audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0
- 17. Parameter Settings for User Entity Instance: audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i
- 18. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init
- 19. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM
- 20. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_audio:Auto_Init_Audio_ROM
- 21. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM
- 22. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller
- 23. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator
- 24. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer
- 25. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO
- 26. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
- 27. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO
- 28. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
- 29. Parameter Settings for Inferred Entity Instance: audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0
- 30. Parameter Settings for Inferred Entity Instance: audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0
- 31. scfifo Parameter Settings by Entity Instance
- 32. altsyncram Parameter Settings by Entity Instance
- 33. Port Connectivity Checks: "audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0"
- 34. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator"
- 35. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller"
- 36. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init"
- 37. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0"
- 38. Port Connectivity Checks: "audio_config:audio_config_inst"
- 39. Port Connectivity Checks: "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i"
- 40. Port Connectivity Checks: "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0"
- 41. Port Connectivity Checks: "audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0"
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer
+ 11. State Machine - |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Registers Packed Into Inferred Megafunctions
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Source assignments for audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram
+ 19. Source assignments for audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram
+ 20. Source assignments for audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated
+ 21. Source assignments for audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated
+ 22. Parameter Settings for User Entity Instance: tone_generator:tone_generator_inst
+ 23. Parameter Settings for User Entity Instance: audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0
+ 24. Parameter Settings for User Entity Instance: audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0
+ 25. Parameter Settings for User Entity Instance: audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i
+ 26. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init
+ 27. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM
+ 28. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_audio:Auto_Init_Audio_ROM
+ 29. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM
+ 30. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller
+ 31. Parameter Settings for User Entity Instance: audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator
+ 32. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer
+ 33. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO
+ 34. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 35. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO
+ 36. Parameter Settings for User Entity Instance: audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 37. Parameter Settings for Inferred Entity Instance: audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0
+ 38. Parameter Settings for Inferred Entity Instance: audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0
+ 39. scfifo Parameter Settings by Entity Instance
+ 40. altsyncram Parameter Settings by Entity Instance
+ 41. Port Connectivity Checks: "audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0"
+ 42. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator"
+ 43. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller"
+ 44. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init"
+ 45. Port Connectivity Checks: "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0"
+ 46. Port Connectivity Checks: "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i"
+ 47. Port Connectivity Checks: "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0"
+ 48. Port Connectivity Checks: "audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0"
+ 49. Post-Synthesis Netlist Statistics for Top Partition
+ 50. Elapsed Time Per Partition
+ 51. Analysis & Synthesis Messages
 
 
 
@@ -72,22 +80,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Apr 13 15:52:16 2023              ;
-; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name               ; audio_codec                                    ;
-; Top-level Entity Name       ; audio_codec                                    ;
-; Family                      ; Cyclone V                                      ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
-; Total registers             ; N/A until Partition Merge                      ;
-; Total pins                  ; N/A until Partition Merge                      ;
-; Total virtual pins          ; N/A until Partition Merge                      ;
-; Total block memory bits     ; N/A until Partition Merge                      ;
-; Total PLLs                  ; N/A until Partition Merge                      ;
-; Total DLLs                  ; N/A until Partition Merge                      ;
-+-----------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Apr 13 18:38:51 2023          ;
+; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                   ; audio_codec                                    ;
+; Top-level Entity Name           ; audio_codec                                    ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 308                                            ;
+; Total pins                      ; 11                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 30,720                                         ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 1                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -186,11 +199,160 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                          ;
++------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
+; File Name with User-Entered Path                                                                                             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                 ; Library          ;
++------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
+; tone_generator.sv                                                                                                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv                                                         ;                  ;
+; audio_codec.sv                                                                                                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv                                                            ;                  ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/audio_config.v                                         ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/audio_config.v                                         ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init.v             ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init.v             ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_adv7180.v  ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_adv7180.v  ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_audio.v    ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_audio.v    ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_de1_soc.v  ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init_ob_de1_soc.v  ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_slow_clock_generator.v            ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_slow_clock_generator.v            ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/audio_config_audio_and_video_config_0.v     ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/audio_config_audio_and_video_config_0.v     ; audio_config     ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_fifo/audio_fifo.v                                             ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_fifo/audio_fifo.v                                             ; audio_fifo       ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_fifo/submodules/altera_avalon_sc_fifo.v                       ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_fifo/submodules/altera_avalon_sc_fifo.v                       ; audio_fifo       ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/audio_clock.v                                           ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/audio_clock.v                                           ; audio_clock      ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/altera_up_avalon_reset_from_locked_signal.v  ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/altera_up_avalon_reset_from_locked_signal.v  ; audio_clock      ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0.v                    ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0.v                    ; audio_clock      ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0_audio_pll.v          ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0_audio_pll.v          ; audio_clock      ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/audio_controller.v                                 ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/audio_controller.v                                 ; audio_controller ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_audio_out_serializer.v        ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_audio_out_serializer.v        ; audio_controller ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_clock_edge.v                  ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_clock_edge.v                  ; audio_controller ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_sync_fifo.v                   ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/altera_up_sync_fifo.v                   ; audio_controller ;
+; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/audio_controller_audio_0.v              ; yes             ; Auto-Found Verilog HDL File  ; c:/users/sefun/dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/audio_controller_audio_0.v              ; audio_controller ;
+; altera_pll.v                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altera_pll.v                                                       ;                  ;
+; scfifo.tdf                                                                                                                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/scfifo.tdf                                                         ;                  ;
+; a_regfifo.inc                                                                                                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_regfifo.inc                                                      ;                  ;
+; a_dpfifo.inc                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_dpfifo.inc                                                       ;                  ;
+; a_i2fifo.inc                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_i2fifo.inc                                                       ;                  ;
+; a_fffifo.inc                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_fffifo.inc                                                       ;                  ;
+; a_f2fifo.inc                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_f2fifo.inc                                                       ;                  ;
+; aglobal221.inc                                                                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                                     ;                  ;
+; db/scfifo_9ba1.tdf                                                                                                           ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/scfifo_9ba1.tdf                                                        ;                  ;
+; db/a_dpfifo_s2a1.tdf                                                                                                         ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/a_dpfifo_s2a1.tdf                                                      ;                  ;
+; db/altsyncram_r3i1.tdf                                                                                                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/altsyncram_r3i1.tdf                                                    ;                  ;
+; db/cmpr_6l8.tdf                                                                                                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/cmpr_6l8.tdf                                                           ;                  ;
+; db/cntr_h2b.tdf                                                                                                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/cntr_h2b.tdf                                                           ;                  ;
+; db/cntr_u27.tdf                                                                                                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/cntr_u27.tdf                                                           ;                  ;
+; db/cntr_i2b.tdf                                                                                                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/cntr_i2b.tdf                                                           ;                  ;
+; altsyncram.tdf                                                                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf                                                     ;                  ;
+; stratix_ram_block.inc                                                                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                                              ;                  ;
+; lpm_mux.inc                                                                                                                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc                                                        ;                  ;
+; lpm_decode.inc                                                                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc                                                     ;                  ;
+; a_rdenreg.inc                                                                                                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                                      ;                  ;
+; altrom.inc                                                                                                                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc                                                         ;                  ;
+; altram.inc                                                                                                                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc                                                         ;                  ;
+; altdpram.inc                                                                                                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc                                                       ;                  ;
+; db/altsyncram_obn1.tdf                                                                                                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/altsyncram_obn1.tdf                                                    ;                  ;
++------------------------------------------------------------------------------------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 240            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 387            ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 85             ;
+;     -- 5 input functions                    ; 47             ;
+;     -- 4 input functions                    ; 54             ;
+;     -- <=3 input functions                  ; 200            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 308            ;
+;                                             ;                ;
+; I/O pins                                    ; 11             ;
+; Total MLAB memory bits                      ; 0              ;
+; Total block memory bits                     ; 30720          ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Total PLLs                                  ; 1              ;
+;     -- PLLs                                 ; 1              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 367            ;
+; Total fan-out                               ; 3688           ;
+; Average fan-out                             ; 4.73           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+
+; Compilation Hierarchy Node                                                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                ; Entity Name                               ; Library Name     ;
++------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+
+; |audio_codec                                                                 ; 387 (3)             ; 308 (3)                   ; 30720             ; 0          ; 11   ; 0            ; |audio_codec                                                                                                                                                                                                                                                                       ; audio_codec                               ; work             ;
+;    |audio_clock:audio_clock_inst|                                            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_clock:audio_clock_inst                                                                                                                                                                                                                                          ; audio_clock                               ; audio_clock      ;
+;       |audio_clock_audio_pll_0:audio_pll_0|                                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0                                                                                                                                                                                                      ; audio_clock_audio_pll_0                   ; audio_clock      ;
+;          |audio_clock_audio_pll_0_audio_pll:audio_pll|                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll                                                                                                                                                          ; audio_clock_audio_pll_0_audio_pll         ; audio_clock      ;
+;             |altera_pll:altera_pll_i|                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i                                                                                                                                  ; altera_pll                                ; work             ;
+;    |audio_config:audio_config_inst|                                          ; 121 (0)             ; 107 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst                                                                                                                                                                                                                                        ; audio_config                              ; audio_config     ;
+;       |audio_config_audio_and_video_config_0:audio_and_video_config_0|       ; 121 (0)             ; 107 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0                                                                                                                                                                         ; audio_config_audio_and_video_config_0     ; audio_config     ;
+;          |altera_up_av_config_auto_init:AV_Config_Auto_Init|                 ; 11 (11)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init                                                                                                                       ; altera_up_av_config_auto_init             ; audio_config     ;
+;          |altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM| ; 17 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM                                                                                                       ; altera_up_av_config_auto_init_ob_de1_soc  ; audio_config     ;
+;             |altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init_ob_de1_soc:Auto_Init_OB_Devices_ROM|altera_up_av_config_auto_init_ob_adv7180:Auto_Init_Video_ROM                                          ; altera_up_av_config_auto_init_ob_adv7180  ; audio_config     ;
+;          |altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|   ; 93 (78)             ; 81 (67)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller                                                                                                         ; altera_up_av_config_serial_bus_controller ; audio_config     ;
+;             |altera_up_slow_clock_generator:Serial_Config_Clock_Generator|   ; 15 (15)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator                                            ; altera_up_slow_clock_generator            ; audio_config     ;
+;    |audio_controller:audio_controller_inst|                                  ; 142 (0)             ; 105 (0)                   ; 4096              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst                                                                                                                                                                                                                                ; audio_controller                          ; audio_controller ;
+;       |audio_controller_audio_0:audio_0|                                     ; 142 (5)             ; 105 (1)                   ; 4096              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0                                                                                                                                                                                               ; audio_controller_audio_0                  ; audio_controller ;
+;          |altera_up_audio_out_serializer:Audio_Out_Serializer|               ; 136 (41)            ; 100 (34)                  ; 4096              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer                                                                                                                                           ; altera_up_audio_out_serializer            ; audio_controller ;
+;             |altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|                ; 47 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO                                                                                           ; altera_up_sync_fifo                       ; audio_controller ;
+;                |scfifo:Sync_FIFO|                                            ; 47 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                                    ; work             ;
+;                   |scfifo_9ba1:auto_generated|                               ; 47 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated                                               ; scfifo_9ba1                               ; work             ;
+;                      |a_dpfifo_s2a1:dpfifo|                                  ; 47 (25)             ; 33 (13)                   ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo                          ; a_dpfifo_s2a1                             ; work             ;
+;                         |altsyncram_r3i1:FIFOram|                            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram  ; altsyncram_r3i1                           ; work             ;
+;                         |cntr_h2b:rd_ptr_msb|                                ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb      ; cntr_h2b                                  ; work             ;
+;                         |cntr_i2b:wr_ptr|                                    ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr          ; cntr_i2b                                  ; work             ;
+;                         |cntr_u27:usedw_counter|                             ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter   ; cntr_u27                                  ; work             ;
+;             |altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|               ; 48 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO                                                                                          ; altera_up_sync_fifo                       ; audio_controller ;
+;                |scfifo:Sync_FIFO|                                            ; 48 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                         ; scfifo                                    ; work             ;
+;                   |scfifo_9ba1:auto_generated|                               ; 48 (0)              ; 33 (0)                    ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated                                              ; scfifo_9ba1                               ; work             ;
+;                      |a_dpfifo_s2a1:dpfifo|                                  ; 48 (26)             ; 33 (13)                   ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo                         ; a_dpfifo_s2a1                             ; work             ;
+;                         |altsyncram_r3i1:FIFOram|                            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram ; altsyncram_r3i1                           ; work             ;
+;                         |cntr_h2b:rd_ptr_msb|                                ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_h2b:rd_ptr_msb     ; cntr_h2b                                  ; work             ;
+;                         |cntr_i2b:wr_ptr|                                    ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_i2b:wr_ptr         ; cntr_i2b                                  ; work             ;
+;                         |cntr_u27:usedw_counter|                             ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|cntr_u27:usedw_counter  ; cntr_u27                                  ; work             ;
+;          |altera_up_clock_edge:Bit_Clock_Edges|                              ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_clock_edge:Bit_Clock_Edges                                                                                                                                                          ; altera_up_clock_edge                      ; audio_controller ;
+;          |altera_up_clock_edge:DAC_Left_Right_Clock_Edges|                   ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_clock_edge:DAC_Left_Right_Clock_Edges                                                                                                                                               ; altera_up_clock_edge                      ; audio_controller ;
+;    |audio_fifo:audio_fifo_left_channel_inst|                                 ; 46 (0)              ; 37 (0)                    ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_left_channel_inst                                                                                                                                                                                                                               ; audio_fifo                                ; audio_fifo       ;
+;       |altera_avalon_sc_fifo:sc_fifo_0|                                      ; 46 (46)             ; 37 (37)                   ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0                                                                                                                                                                                               ; altera_avalon_sc_fifo                     ; audio_fifo       ;
+;          |altsyncram:mem_rtl_0|                                              ; 0 (0)               ; 0 (0)                     ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0                                                                                                                                                                          ; altsyncram                                ; work             ;
+;             |altsyncram_obn1:auto_generated|                                 ; 0 (0)               ; 0 (0)                     ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated                                                                                                                                           ; altsyncram_obn1                           ; work             ;
+;    |audio_fifo:audio_fifo_right_channel_inst|                                ; 46 (0)              ; 37 (0)                    ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_right_channel_inst                                                                                                                                                                                                                              ; audio_fifo                                ; audio_fifo       ;
+;       |altera_avalon_sc_fifo:sc_fifo_0|                                      ; 46 (46)             ; 37 (37)                   ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0                                                                                                                                                                                              ; altera_avalon_sc_fifo                     ; audio_fifo       ;
+;          |altsyncram:mem_rtl_0|                                              ; 0 (0)               ; 0 (0)                     ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0                                                                                                                                                                         ; altsyncram                                ; work             ;
+;             |altsyncram_obn1:auto_generated|                                 ; 0 (0)               ; 0 (0)                     ; 13312             ; 0          ; 0    ; 0            ; |audio_codec|audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated                                                                                                                                          ; altsyncram_obn1                           ; work             ;
+;    |tone_generator:tone_generator_inst|                                      ; 29 (29)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |audio_codec|tone_generator:tone_generator_inst                                                                                                                                                                                                                                    ; tone_generator                            ; work             ;
++------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                                                                                                                                                                             ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 128          ; 16           ; 128          ; 16           ; 2048  ; None ;
+; audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|altera_up_sync_fifo:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_9ba1:auto_generated|a_dpfifo_s2a1:dpfifo|altsyncram_r3i1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 16           ; 128          ; 16           ; 2048  ; None ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated|ALTSYNCRAM                                                                                                                                           ; AUTO ; Simple Dual Port ; 1024         ; 13           ; 1024         ; 13           ; 13312 ; None ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated|ALTSYNCRAM                                                                                                                                          ; AUTO ; Simple Dual Port ; 1024         ; 13           ; 1024         ; 13           ; 13312 ; None ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -240,13 +402,121 @@ Encoding Type:  One-Hot
 +---------------------------------------+------------------------------------+------------------------------------+-------------------------------------+---------------------------------------+--------------------------------------+--------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                           ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                                                                     ; Reason for Removal                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|data_out[0,9,18]                  ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|data_reg[0..8]                                                                      ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_reg[0..7]                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|control_reg[16,17]                                                                  ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; tone_generator:tone_generator_inst|accumulator[0..2]                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; tone_generator:tone_generator_inst|sample[0..2]                                                                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[0,1]                                                                                ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[0,1]                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[2]                                                                                  ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[0,1]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[0,1]                                                                                          ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[2]                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[2]                                                                                           ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[2]                                                                                            ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_for_transfer[0..6]                                                          ; Merged with audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_for_transfer[7]                                        ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|device_for_transfer[0]                                                              ; Merged with audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|device_for_transfer[1]                                         ;
+; tone_generator:tone_generator_inst|sample[4,11..15]                                                                                                                               ; Merged with tone_generator:tone_generator_inst|sample[10]                                                                                                                ;
+; tone_generator:tone_generator_inst|sample[6..9]                                                                                                                                   ; Merged with tone_generator:tone_generator_inst|sample[5]                                                                                                                 ;
+; tone_generator:tone_generator_inst|accumulator[4,11..15]                                                                                                                          ; Merged with tone_generator:tone_generator_inst|accumulator[10]                                                                                                           ;
+; tone_generator:tone_generator_inst|square_wave                                                                                                                                    ; Merged with tone_generator:tone_generator_inst|accumulator[10]                                                                                                           ;
+; tone_generator:tone_generator_inst|accumulator[6..9]                                                                                                                              ; Merged with tone_generator:tone_generator_inst|accumulator[5]                                                                                                            ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_for_transfer[7]                                                             ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|device_for_transfer[1]                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|external_read_transfer                                                              ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|data_out[19,20,22,26]             ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|start_external_transfer                                                             ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|data_out[21,23]                   ; Merged with audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|data_out[24] ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_1_PRE_WRITE                                                 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_4_PRE_READ                                                  ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer~2                                                                 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer~3                                                                 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer~4                                                                 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol~2 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol~3 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|s_serial_protocol~4 ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_0_IDLE                                                      ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_2_WRITE_TRANSFER                                            ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_3_POST_WRITE                                                ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_5_READ_TRANSFER                                             ; Lost fanout                                                                                                                                                              ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_6_POST_READ                                                 ; Lost fanout                                                                                                                                                              ;
+; Total Number of Removed Registers = 92                                                                                                                                            ;                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                                               ; Reason for Removal        ; Registers Removed due to This Register                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+; tone_generator:tone_generator_inst|accumulator[2]                                                                                                           ; Stuck at GND              ; tone_generator:tone_generator_inst|sample[2],                                                                                           ;
+;                                                                                                                                                             ; due to stuck port data_in ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[0],                                       ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[1],                                       ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[1],                                                ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[0],                                                ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[2],                                       ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[0],                                        ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[1],                                        ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[1],                                                 ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[0],                                                 ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[2],                                        ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[2],                                                ;
+;                                                                                                                                                             ;                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|out_payload[2]                                                  ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer~2                                           ; Lost Fanouts              ; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_2_WRITE_TRANSFER, ;
+;                                                                                                                                                             ;                           ; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|s_serial_transfer.STATE_5_READ_TRANSFER   ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|data_out[9] ; Stuck at GND              ; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|external_read_transfer                    ;
+;                                                                                                                                                             ; due to stuck port data_in ;                                                                                                                                         ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_reg[7]                                                ; Stuck at GND              ; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|address_for_transfer[7]                   ;
+;                                                                                                                                                             ; due to stuck port data_in ;                                                                                                                                         ;
+; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|control_reg[17]                                               ; Stuck at GND              ; audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|device_for_transfer[1]                    ;
+;                                                                                                                                                             ; due to stuck port data_in ;                                                                                                                                         ;
+; tone_generator:tone_generator_inst|accumulator[1]                                                                                                           ; Stuck at GND              ; tone_generator:tone_generator_inst|sample[1]                                                                                            ;
+;                                                                                                                                                             ; due to stuck port data_in ;                                                                                                                                         ;
+; tone_generator:tone_generator_inst|accumulator[0]                                                                                                           ; Stuck at GND              ; tone_generator:tone_generator_inst|sample[0]                                                                                            ;
+;                                                                                                                                                             ; due to stuck port data_in ;                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 308   ;
+; Number of registers using Synchronous Clear  ; 193   ;
+; Number of registers using Synchronous Load   ; 24    ;
+; Number of registers using Asynchronous Clear ; 93    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 187   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                             ;
++--------------------------------------------------------------------------------+---------+
+; Inverted Register                                                              ; Fan out ;
++--------------------------------------------------------------------------------+---------+
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|empty  ; 2       ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|empty ; 2       ;
+; Total number of inverted registers = 2                                         ;         ;
++--------------------------------------------------------------------------------+---------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Packed Into Inferred Megafunctions                                                                                                                                                     ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------+
 ; Register Name                                                                                        ; Megafunction                                                                       ; Type ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------+
-; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[1..15] ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0 ; RAM  ;
-; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[1..15]  ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0  ; RAM  ;
+; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[3..15] ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0 ; RAM  ;
+; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|internal_out_payload[3..15]  ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0  ; RAM  ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------+
 
 
@@ -255,10 +525,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|rom_address[5]                  ;
-; 5:1                ; 37 bits   ; 111 LEs       ; 74 LEs               ; 37 LEs                 ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_mask[16] ;
-; 6:1                ; 20 bits   ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_data[6]  ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|data_out_shift_reg[9]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init|rom_address[0]                  ;
+; 5:1                ; 37 bits   ; 111 LEs       ; 74 LEs               ; 37 LEs                 ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_mask[12] ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |audio_codec|audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|shiftreg_data[13] ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |audio_codec|audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer|data_out_shift_reg[10]                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -281,7 +551,7 @@ Encoding Type:  One-Hot
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_sbn1:auto_generated ;
+; Source assignments for audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                    ;
 +---------------------------------+--------------------+------+---------------------------------------------------------------------------------------+
@@ -290,7 +560,7 @@ Encoding Type:  One-Hot
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_sbn1:auto_generated ;
+; Source assignments for audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0|altsyncram_obn1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                   ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------+
@@ -835,7 +1105,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                     ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                            ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                            ;
-; WIDTH_A                            ; 15                   ; Untyped                                                                            ;
+; WIDTH_A                            ; 13                   ; Untyped                                                                            ;
 ; WIDTHAD_A                          ; 10                   ; Untyped                                                                            ;
 ; NUMWORDS_A                         ; 1024                 ; Untyped                                                                            ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                            ;
@@ -844,7 +1114,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                            ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                            ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                            ;
-; WIDTH_B                            ; 15                   ; Untyped                                                                            ;
+; WIDTH_B                            ; 13                   ; Untyped                                                                            ;
 ; WIDTHAD_B                          ; 10                   ; Untyped                                                                            ;
 ; NUMWORDS_B                         ; 1024                 ; Untyped                                                                            ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                            ;
@@ -879,7 +1149,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                            ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                                            ;
-; CBXI_PARAMETER                     ; altsyncram_sbn1      ; Untyped                                                                            ;
+; CBXI_PARAMETER                     ; altsyncram_obn1      ; Untyped                                                                            ;
 +------------------------------------+----------------------+------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -896,7 +1166,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                    ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                           ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                           ;
-; WIDTH_A                            ; 15                   ; Untyped                                                                           ;
+; WIDTH_A                            ; 13                   ; Untyped                                                                           ;
 ; WIDTHAD_A                          ; 10                   ; Untyped                                                                           ;
 ; NUMWORDS_A                         ; 1024                 ; Untyped                                                                           ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                           ;
@@ -905,7 +1175,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                           ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                           ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                           ;
-; WIDTH_B                            ; 15                   ; Untyped                                                                           ;
+; WIDTH_B                            ; 13                   ; Untyped                                                                           ;
 ; WIDTHAD_B                          ; 10                   ; Untyped                                                                           ;
 ; NUMWORDS_B                         ; 1024                 ; Untyped                                                                           ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                           ;
@@ -940,7 +1210,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                           ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                                           ;
-; CBXI_PARAMETER                     ; altsyncram_sbn1      ; Untyped                                                                           ;
+; CBXI_PARAMETER                     ; altsyncram_obn1      ; Untyped                                                                           ;
 +------------------------------------+----------------------+-----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -974,10 +1244,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Number of entity instances                ; 2                                                                                             ;
 ; Entity Instance                           ; audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0 ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                     ;
-;     -- WIDTH_A                            ; 15                                                                                            ;
+;     -- WIDTH_A                            ; 13                                                                                            ;
 ;     -- NUMWORDS_A                         ; 1024                                                                                          ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                  ;
-;     -- WIDTH_B                            ; 15                                                                                            ;
+;     -- WIDTH_B                            ; 13                                                                                            ;
 ;     -- NUMWORDS_B                         ; 1024                                                                                          ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                        ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                  ;
@@ -985,10 +1255,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                                                      ;
 ; Entity Instance                           ; audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0  ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                     ;
-;     -- WIDTH_A                            ; 15                                                                                            ;
+;     -- WIDTH_A                            ; 13                                                                                            ;
 ;     -- NUMWORDS_A                         ; 1024                                                                                          ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                  ;
-;     -- WIDTH_B                            ; 15                                                                                            ;
+;     -- WIDTH_B                            ; 13                                                                                            ;
 ;     -- NUMWORDS_B                         ; 1024                                                                                          ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                        ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                  ;
@@ -1078,15 +1348,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "audio_config:audio_config_inst"                                                                                                ;
-+--------------------------------------------------+-------+----------+-------------------------------------------------------------------------------------+
-; Port                                             ; Type  ; Severity ; Details                                                                             ;
-+--------------------------------------------------+-------+----------+-------------------------------------------------------------------------------------+
-; audio_and_video_config_0_external_interface_SDAT ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------------------------------------------+-------+----------+-------------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i"                     ;
 +-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1151,12 +1412,51 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+--------+----------+-------------------------------------------------------------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 308                         ;
+;     CLR               ; 4                           ;
+;     CLR SLD           ; 22                          ;
+;     ENA               ; 3                           ;
+;     ENA CLR           ; 55                          ;
+;     ENA CLR SCLR      ; 12                          ;
+;     ENA SCLR          ; 117                         ;
+;     SCLR              ; 62                          ;
+;     SCLR SLD          ; 2                           ;
+;     plain             ; 31                          ;
+; arriav_io_obuf        ; 3                           ;
+; arriav_lcell_comb     ; 387                         ;
+;     arith             ; 119                         ;
+;         1 data inputs ; 107                         ;
+;         2 data inputs ; 12                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 267                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 51                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 54                          ;
+;         5 data inputs ; 47                          ;
+;         6 data inputs ; 85                          ;
+; boundary_port         ; 11                          ;
+; generic_pll           ; 1                           ;
+; stratixv_ram_block    ; 58                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.01                        ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1166,19 +1466,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Apr 13 15:50:06 2023
+    Info: Processing started: Thu Apr 13 18:36:26 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off audio_codec -c audio_codec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12248): Elaborating Platform Designer system entity "audio_config.qsys"
-Info (12250): 2023.04.13.15:50:34 Progress: Loading code/audio_config.qsys
-Info (12250): 2023.04.13.15:50:37 Progress: Reading input file
-Info (12250): 2023.04.13.15:50:37 Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
-Info (12250): 2023.04.13.15:50:39 Progress: Parameterizing module audio_and_video_config_0
-Info (12250): 2023.04.13.15:50:39 Progress: Building connections
-Info (12250): 2023.04.13.15:50:39 Progress: Parameterizing connections
-Info (12250): 2023.04.13.15:50:39 Progress: Validating
-Info (12250): 2023.04.13.15:50:39 Progress: Done reading input file
+Info (12250): 2023.04.13.18:36:59 Progress: Loading code/audio_config.qsys
+Info (12250): 2023.04.13.18:37:02 Progress: Reading input file
+Info (12250): 2023.04.13.18:37:03 Progress: Adding audio_and_video_config_0 [altera_up_avalon_audio_and_video_config 18.0]
+Info (12250): 2023.04.13.18:37:05 Progress: Parameterizing module audio_and_video_config_0
+Info (12250): 2023.04.13.18:37:05 Progress: Building connections
+Info (12250): 2023.04.13.18:37:05 Progress: Parameterizing connections
+Info (12250): 2023.04.13.18:37:05 Progress: Validating
+Info (12250): 2023.04.13.18:37:05 Progress: Done reading input file
 Warning (12251): Audio_config.audio_and_video_config_0: audio_and_video_config_0.avalon_av_config_slave must be connected to an Avalon-MM master
 Info (12250): Audio_config: Generating audio_config "audio_config" for QUARTUS_SYNTH
 Info (12250): Audio_and_video_config_0: Starting Generation of Audio and Video Config
@@ -1186,27 +1486,27 @@ Info (12250): Audio_and_video_config_0: "audio_config" instantiated altera_up_av
 Info (12250): Audio_config: Done "audio_config" with 2 modules, 16 files
 Info (12249): Finished elaborating Platform Designer system entity "audio_config.qsys"
 Info (12248): Elaborating Platform Designer system entity "audio_fifo.qsys"
-Info (12250): 2023.04.13.15:50:54 Progress: Loading code/audio_fifo.qsys
-Info (12250): 2023.04.13.15:50:57 Progress: Reading input file
-Info (12250): 2023.04.13.15:50:58 Progress: Adding sc_fifo_0 [altera_avalon_sc_fifo 22.1]
-Info (12250): 2023.04.13.15:50:58 Progress: Parameterizing module sc_fifo_0
-Info (12250): 2023.04.13.15:50:58 Progress: Building connections
-Info (12250): 2023.04.13.15:50:58 Progress: Parameterizing connections
-Info (12250): 2023.04.13.15:50:58 Progress: Validating
-Info (12250): 2023.04.13.15:51:01 Progress: Done reading input file
+Info (12250): 2023.04.13.18:37:24 Progress: Loading code/audio_fifo.qsys
+Info (12250): 2023.04.13.18:37:27 Progress: Reading input file
+Info (12250): 2023.04.13.18:37:27 Progress: Adding sc_fifo_0 [altera_avalon_sc_fifo 22.1]
+Info (12250): 2023.04.13.18:37:28 Progress: Parameterizing module sc_fifo_0
+Info (12250): 2023.04.13.18:37:28 Progress: Building connections
+Info (12250): 2023.04.13.18:37:28 Progress: Parameterizing connections
+Info (12250): 2023.04.13.18:37:28 Progress: Validating
+Info (12250): 2023.04.13.18:37:31 Progress: Done reading input file
 Info (12250): Audio_fifo: Generating audio_fifo "audio_fifo" for QUARTUS_SYNTH
 Info (12250): Sc_fifo_0: "audio_fifo" instantiated altera_avalon_sc_fifo "sc_fifo_0"
 Info (12250): Audio_fifo: Done "audio_fifo" with 2 modules, 2 files
 Info (12249): Finished elaborating Platform Designer system entity "audio_fifo.qsys"
 Info (12248): Elaborating Platform Designer system entity "audio_clock.qsys"
-Info (12250): 2023.04.13.15:51:18 Progress: Loading code/audio_clock.qsys
-Info (12250): 2023.04.13.15:51:21 Progress: Reading input file
-Info (12250): 2023.04.13.15:51:21 Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
-Info (12250): 2023.04.13.15:51:21 Progress: Parameterizing module audio_pll_0
-Info (12250): 2023.04.13.15:51:21 Progress: Building connections
-Info (12250): 2023.04.13.15:51:21 Progress: Parameterizing connections
-Info (12250): 2023.04.13.15:51:21 Progress: Validating
-Info (12250): 2023.04.13.15:51:29 Progress: Done reading input file
+Info (12250): 2023.04.13.18:37:47 Progress: Loading code/audio_clock.qsys
+Info (12250): 2023.04.13.18:37:50 Progress: Reading input file
+Info (12250): 2023.04.13.18:37:50 Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Info (12250): 2023.04.13.18:37:50 Progress: Parameterizing module audio_pll_0
+Info (12250): 2023.04.13.18:37:50 Progress: Building connections
+Info (12250): 2023.04.13.18:37:50 Progress: Parameterizing connections
+Info (12250): 2023.04.13.18:37:50 Progress: Validating
+Info (12250): 2023.04.13.18:37:58 Progress: Done reading input file
 Info (12250): Audio_clock: Generating audio_clock "audio_clock" for QUARTUS_SYNTH
 Info (12250): Audio_pll_0: "audio_clock" instantiated altera_up_avalon_audio_pll "audio_pll_0"
 Info (12250): Audio_pll: "audio_pll_0" instantiated altera_pll "audio_pll"
@@ -1214,14 +1514,14 @@ Info (12250): Reset_from_locked: "audio_pll_0" instantiated altera_up_avalon_res
 Info (12250): Audio_clock: Done "audio_clock" with 4 modules, 5 files
 Info (12249): Finished elaborating Platform Designer system entity "audio_clock.qsys"
 Info (12248): Elaborating Platform Designer system entity "audio_controller.qsys"
-Info (12250): 2023.04.13.15:51:57 Progress: Loading code/audio_controller.qsys
-Info (12250): 2023.04.13.15:52:00 Progress: Reading input file
-Info (12250): 2023.04.13.15:52:00 Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
-Info (12250): 2023.04.13.15:52:02 Progress: Parameterizing module audio_0
-Info (12250): 2023.04.13.15:52:02 Progress: Building connections
-Info (12250): 2023.04.13.15:52:02 Progress: Parameterizing connections
-Info (12250): 2023.04.13.15:52:02 Progress: Validating
-Info (12250): 2023.04.13.15:52:02 Progress: Done reading input file
+Info (12250): 2023.04.13.18:38:29 Progress: Loading code/audio_controller.qsys
+Info (12250): 2023.04.13.18:38:32 Progress: Reading input file
+Info (12250): 2023.04.13.18:38:33 Progress: Adding audio_0 [altera_up_avalon_audio 18.0]
+Info (12250): 2023.04.13.18:38:34 Progress: Parameterizing module audio_0
+Info (12250): 2023.04.13.18:38:34 Progress: Building connections
+Info (12250): 2023.04.13.18:38:34 Progress: Parameterizing connections
+Info (12250): 2023.04.13.18:38:34 Progress: Validating
+Info (12250): 2023.04.13.18:38:35 Progress: Done reading input file
 Warning (12251): Audio_controller.audio_0.avalon_left_channel_source: audio_0.avalon_left_channel_source must be connected to an Avalon-ST sink
 Warning (12251): Audio_controller.audio_0.avalon_right_channel_source: audio_0.avalon_right_channel_source must be connected to an Avalon-ST sink
 Info (12250): Audio_controller: Generating audio_controller "audio_controller" for QUARTUS_SYNTH
@@ -1294,14 +1594,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/a
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/audio_controller/submodules/audio_controller_audio_0.v
     Info (12023): Found entity 1: audio_controller_audio_0 File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/audio_controller_audio_0.v Line: 30
 Info (12127): Elaborating entity "audio_codec" for the top level hierarchy
-Info (12128): Elaborating entity "tone_generator" for hierarchy "tone_generator:tone_generator_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 102
+Info (12128): Elaborating entity "tone_generator" for hierarchy "tone_generator:tone_generator_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 97
 Warning (10230): Verilog HDL assignment warning at tone_generator.sv(48): truncated value with size 32 to match size of target (1) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 48
 Warning (10230): Verilog HDL assignment warning at tone_generator.sv(55): truncated value with size 32 to match size of target (12) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 55
 Warning (10230): Verilog HDL assignment warning at tone_generator.sv(57): truncated value with size 32 to match size of target (24) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 57
 Warning (10230): Verilog HDL assignment warning at tone_generator.sv(62): truncated value with size 32 to match size of target (1) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 62
-Info (12128): Elaborating entity "audio_fifo" for hierarchy "audio_fifo:audio_fifo_left_channel_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 114
+Info (12128): Elaborating entity "audio_fifo" for hierarchy "audio_fifo:audio_fifo_left_channel_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 109
 Info (12128): Elaborating entity "altera_avalon_sc_fifo" for hierarchy "audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_fifo/audio_fifo.v Line: 56
-Info (12128): Elaborating entity "audio_clock" for hierarchy "audio_clock:audio_clock_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 132
+Info (12128): Elaborating entity "audio_clock" for hierarchy "audio_clock:audio_clock_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 127
 Info (12128): Elaborating entity "audio_clock_audio_pll_0" for hierarchy "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_clock/audio_clock.v Line: 17
 Info (12128): Elaborating entity "audio_clock_audio_pll_0_audio_pll" for hierarchy "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0.v Line: 23
 Info (12128): Elaborating entity "altera_pll" for hierarchy "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|audio_clock_audio_pll_0_audio_pll:audio_pll|altera_pll:altera_pll_i" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0_audio_pll.v Line: 85
@@ -1369,7 +1669,7 @@ Info (12133): Instantiated megafunction "audio_clock:audio_clock_inst|audio_cloc
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "altera_up_avalon_reset_from_locked_signal" for hierarchy "audio_clock:audio_clock_inst|audio_clock_audio_pll_0:audio_pll_0|altera_up_avalon_reset_from_locked_signal:reset_from_locked" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_clock/submodules/audio_clock_audio_pll_0.v Line: 28
-Info (12128): Elaborating entity "audio_config" for hierarchy "audio_config:audio_config_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 140
+Info (12128): Elaborating entity "audio_config" for hierarchy "audio_config:audio_config_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 135
 Info (12128): Elaborating entity "audio_config_audio_and_video_config_0" for hierarchy "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/audio_config.v Line: 25
 Info (12128): Elaborating entity "altera_up_av_config_auto_init" for hierarchy "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_auto_init:AV_Config_Auto_Init" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/audio_config_audio_and_video_config_0.v Line: 412
 Warning (10230): Verilog HDL assignment warning at altera_up_av_config_auto_init.v(137): truncated value with size 32 to match size of target (6) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_auto_init.v Line: 137
@@ -1380,7 +1680,7 @@ Info (12128): Elaborating entity "altera_up_av_config_serial_bus_controller" for
 Warning (10230): Verilog HDL assignment warning at altera_up_av_config_serial_bus_controller.v(241): truncated value with size 32 to match size of target (5) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v Line: 241
 Info (12128): Elaborating entity "altera_up_slow_clock_generator" for hierarchy "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|altera_up_slow_clock_generator:Serial_Config_Clock_Generator" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v Line: 294
 Warning (10230): Verilog HDL assignment warning at altera_up_slow_clock_generator.v(109): truncated value with size 32 to match size of target (11) File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_slow_clock_generator.v Line: 109
-Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_controller_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 155
+Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_controller_inst" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 150
 Info (12128): Elaborating entity "audio_controller_audio_0" for hierarchy "audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_controller/audio_controller.v Line: 38
 Info (12128): Elaborating entity "altera_up_clock_edge" for hierarchy "audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_clock_edge:Bit_Clock_Edges" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/audio_controller_audio_0.v Line: 159
 Info (12128): Elaborating entity "altera_up_audio_out_serializer" for hierarchy "audio_controller:audio_controller_inst|audio_controller_audio_0:audio_0|altera_up_audio_out_serializer:Audio_Out_Serializer" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_controller/submodules/audio_controller_audio_0.v Line: 200
@@ -1425,10 +1725,10 @@ Info (276014): Found 1 instances of uninferred RAM logic
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 15
+        Info (286033): Parameter WIDTH_A set to 13
         Info (286033): Parameter WIDTHAD_A set to 10
         Info (286033): Parameter NUMWORDS_A set to 1024
-        Info (286033): Parameter WIDTH_B set to 15
+        Info (286033): Parameter WIDTH_B set to 13
         Info (286033): Parameter WIDTHAD_B set to 10
         Info (286033): Parameter NUMWORDS_B set to 1024
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
@@ -1441,10 +1741,10 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
     Info (276029): Inferred altsyncram megafunction from the following design logic: "audio_fifo:audio_fifo_left_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|mem_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 15
+        Info (286033): Parameter WIDTH_A set to 13
         Info (286033): Parameter WIDTHAD_A set to 10
         Info (286033): Parameter NUMWORDS_A set to 1024
-        Info (286033): Parameter WIDTH_B set to 15
+        Info (286033): Parameter WIDTH_B set to 13
         Info (286033): Parameter WIDTHAD_B set to 10
         Info (286033): Parameter NUMWORDS_B set to 1024
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
@@ -1458,10 +1758,10 @@ Info (19000): Inferred 2 megafunctions from design logic
 Info (12130): Elaborated megafunction instantiation "audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0"
 Info (12133): Instantiated megafunction "audio_fifo:audio_fifo_right_channel_inst|altera_avalon_sc_fifo:sc_fifo_0|altsyncram:mem_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
-    Info (12134): Parameter "WIDTH_A" = "15"
+    Info (12134): Parameter "WIDTH_A" = "13"
     Info (12134): Parameter "WIDTHAD_A" = "10"
     Info (12134): Parameter "NUMWORDS_A" = "1024"
-    Info (12134): Parameter "WIDTH_B" = "15"
+    Info (12134): Parameter "WIDTH_B" = "13"
     Info (12134): Parameter "WIDTHAD_B" = "10"
     Info (12134): Parameter "NUMWORDS_B" = "1024"
     Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
@@ -1472,16 +1772,36 @@ Info (12133): Instantiated megafunction "audio_fifo:audio_fifo_right_channel_ins
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sbn1.tdf
-    Info (12023): Found entity 1: altsyncram_sbn1 File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/altsyncram_sbn1.tdf Line: 28
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|new_data" and its non-tri-state driver. File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v Line: 118
-Error (13076): The node "audio_config:audio_config_inst|audio_config_audio_and_video_config_0:audio_and_video_config_0|altera_up_av_config_serial_bus_controller:Serial_Bus_Controller|new_data" has multiple drivers due to the non-tri-state driver "FPGA_I2C_SDAT" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/ip/audio_config/submodules/altera_up_av_config_serial_bus_controller.v Line: 118
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 15 warnings
-    Error: Peak virtual memory: 4834 megabytes
-    Error: Processing ended: Thu Apr 13 15:52:16 2023
-    Error: Elapsed time: 00:02:10
-    Error: Total CPU time (on all processors): 00:01:34
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_obn1.tdf
+    Info (12023): Found entity 1: altsyncram_obn1 File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/db/altsyncram_obn1.tdf Line: 28
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "AUD_BCLK" has no driver File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 6
+    Warning (13040): bidirectional pin "AUD_DACLRCK" has no driver File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 8
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "tone_generator:tone_generator_inst|sample_valid" is converted into an equivalent circuit using register "tone_generator:tone_generator_inst|sample_valid~_emulated" and latch "tone_generator:tone_generator_inst|sample_valid~1" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 9
+    Warning (13310): Register "tone_generator:tone_generator_inst|sample[10]" is converted into an equivalent circuit using register "tone_generator:tone_generator_inst|sample[10]~_emulated" and latch "tone_generator:tone_generator_inst|sample[10]~1" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 49
+    Warning (13310): Register "tone_generator:tone_generator_inst|sample[5]" is converted into an equivalent circuit using register "tone_generator:tone_generator_inst|sample[5]~_emulated" and latch "tone_generator:tone_generator_inst|sample[5]~5" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 49
+    Warning (13310): Register "tone_generator:tone_generator_inst|sample[3]" is converted into an equivalent circuit using register "tone_generator:tone_generator_inst|sample[3]~_emulated" and latch "tone_generator:tone_generator_inst|sample[3]~9" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/tone_generator.sv Line: 49
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 14 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 36
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 36
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/sefun/Dev/digital_desgin_2/project_2/code/audio_codec.sv Line: 36
+Info (21057): Implemented 538 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21060): Implemented 3 bidirectional pins
+    Info (21061): Implemented 468 logic cells
+    Info (21064): Implemented 58 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Thu Apr 13 18:38:51 2023
+    Info: Elapsed time: 00:02:25
+    Info: Total CPU time (on all processors): 00:02:00
 
 

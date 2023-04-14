@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/sefun/Dev/digital_desgin_2/homework7
 valtera_avalon_sc_fifo
-Z0 !s110 1681419333
+Z0 !s110 1681422224
 !i10b 1
 !s100 4mK@em][G=j]om3zJIhOc0
 Ic4egJY_2@8d>bIgcaI18`0
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1681419333.000000
+Z5 !s108 1681422224.000000
 !s107 C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/altera_avalon_sc_fifo.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/altera_avalon_sc_fifo.v|
 !i113 1
@@ -52,27 +52,27 @@ R6
 R7
 vtone_generator
 Z8 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-R0
+Z9 !s110 1681422225
 !i10b 1
 !s100 HaJaZZNQK?33oT[`YQLX]0
 I[Kj>mf;:MZJ>X[DW_=5Jh3
 R1
-Z9 !s105 tone_generator_sv_unit
+Z10 !s105 tone_generator_sv_unit
 S1
 R2
-Z10 w1681419323
-Z11 8C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv
-Z12 FC:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv
+Z11 w1681419323
+Z12 8C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv
+Z13 FC:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-Z13 !s107 C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv|
-Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv|
+Z14 !s107 C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/sefun/Dev/digital_desgin_2/project_2/testbench/tone_generator.sv|
 !i113 1
-Z15 o-work work -sv
+Z16 o-work work -sv
 R7
 vtone_generator_tb
 R8
@@ -81,44 +81,44 @@ R8
 !s100 jz]AKe[P_kbUZD:iFodzd0
 I^]nOR[4czCPBBz^0OQ]dH0
 R1
-R9
+R10
 S1
 R2
 w1681417443
-R11
 R12
+R13
 L0 71
 R4
 r1
 !s85 0
 31
 !s108 1681417497.000000
-R13
 R14
-!i113 1
 R15
+!i113 1
+R16
 R7
 vtone_generator_tb1
 R8
-R0
+R9
 !i10b 1
 !s100 bX5HVR=J3Q;c><2E:mkDe0
 I6;_e`VGhkVc1h<O`:Q;[]0
 R1
-R9
+R10
 S1
 R2
-R10
 R11
 R12
+R13
 L0 118
 R4
 r1
 !s85 0
 31
 R5
-R13
 R14
-!i113 1
 R15
+!i113 1
+R16
 R7

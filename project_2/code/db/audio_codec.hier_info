@@ -1,12 +1,12 @@
 |audio_codec
-AUD_BCLK => AUD_BCLK.IN1
-AUD_DACDAT <= audio_controller:audio_controller_inst.audio_0_external_interface_DACDAT
-AUD_DACLRCK => AUD_DACLRCK.IN1
-AUD_XCK <= audio_clock:audio_clock_inst.audio_pll_0_audio_clk_clk
+AUD_BCLK <> audio_controller:audio_controller_inst.audio_0_external_interface_BCLK
+AUD_DACDAT << audio_controller:audio_controller_inst.audio_0_external_interface_DACDAT
+AUD_DACLRCK <> audio_controller:audio_controller_inst.audio_0_external_interface_DACLRCK
+AUD_XCK << audio_clock:audio_clock_inst.audio_pll_0_audio_clk_clk
 CLOCK_50 => clk.IN6
-FPGA_I2C_SCLK <= audio_config:audio_config_inst.audio_and_video_config_0_external_interface_SCLK
-FPGA_I2C_SDAT => interface_SDAT.IN1
-KEY[0] => reset_reg[0].DATAIN
+FPGA_I2C_SCLK << audio_config:audio_config_inst.audio_and_video_config_0_external_interface_SCLK
+FPGA_I2C_SDAT <> audio_config:audio_config_inst.audio_and_video_config_0_external_interface_SDAT
+KEY[0] => reset_reg1.DATAIN
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
